@@ -1,0 +1,62 @@
+<req:TrackingResponse xsi:schemaLocation="http://www.dhl.com TrackingResponse.xsd" xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Response>
+      <ServiceHeader>
+         <MessageTime>2002-06-25T11:28:56-08:00</MessageTime>
+         <MessageReference>1234567890123456789012345678</MessageReference>
+         <SiteID>TestSiteID</SiteID>
+      </ServiceHeader>
+   </Response>
+   <AWBInfo>
+      <AWBNumber>4948884640</AWBNumber>
+      <Status>
+         <ActionStatus>success</ActionStatus>
+      </Status>
+      <ShipmentInfo>
+         <OriginServiceArea>
+            <ServiceAreaCode>MIL</ServiceAreaCode>
+            <Description>Milan - Italy</Description>
+         </OriginServiceArea>
+         <DestinationServiceArea>
+            <ServiceAreaCode>VNO</ServiceAreaCode>
+            <Description>Vilnius - Lithuania</Description>
+         </DestinationServiceArea>
+         <ShipperName>TINTORIA VAGO</ShipperName>
+         <ShipperAccountNumber>105368175</ShipperAccountNumber>
+         <ConsigneeName>SKINIJA</ConsigneeName>
+         <ShipmentDate>2010-04-09T09:31:00</ShipmentDate>
+         <Pieces>1</Pieces>
+         <WeightUnit>K</WeightUnit>
+         <EstDlvyDate>2010-06-24 00:00:00 GMT+01:00</EstDlvyDate>
+         <EstDlvyDateUTC>2010-06-23 23:00:00</EstDlvyDateUTC>
+		 <GlobalProductCode>P</GlobalProductCode>
+         <ShipmentDesc>EXPRESS WORLDWIDE</ShipmentDesc>
+         <DlvyNotificationFlag>Y</DlvyNotificationFlag>
+		 <Shipper>
+            <City>KOWLOON</City>
+            <CountryCode>HK</CountryCode>
+         </Shipper>
+         <Consignee>
+            <City>EURE</City>
+            <PostalCode>27120</PostalCode>
+            <CountryCode>FR</CountryCode>
+         </Consignee>
+         <ShipperReference>
+            <ReferenceID>8100048270</ReferenceID>
+         </ShipperReference>
+         <ShipmentEvent>
+            <Date>2010-04-09</Date>
+            <Time>09:31:00</Time>
+            <ServiceEvent>
+               <EventCode>PU</EventCode>
+               <Description>Shipment picked up</Description>
+            </ServiceEvent>
+            <Signatory/>
+            <ServiceArea>
+               <ServiceAreaCode>MIL</ServiceAreaCode>
+               <Description>Milan - Italy</Description>
+            </ServiceArea>
+         </ShipmentEvent>
+      </ShipmentInfo>
+   </AWBInfo>
+</req:TrackingResponse>
+

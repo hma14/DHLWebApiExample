@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ErrorResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com err-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-10-10T04:09:42+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+            <Password>autotest</Password>
+        </ServiceHeader>
+        <Status>
+            <ActionStatus>Error</ActionStatus>
+            <Condition>
+                <ConditionCode>113</ConditionCode>
+                <ConditionData>The same special service cannot be
+                    requested more than once:Duplicate
+                    SpecialServiceType value =S</ConditionData>
+            </Condition>
+        </Status>
+    </Response></res:ErrorResponse>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2015-11-11T12:28:50+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>CustomerSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>AP</RegionCode>
+    <Note>
+        <ActionNote>Success</ActionNote>
+    </Note>
+    <AirwayBillNumber/>
+    <BillingCode>DSA</BillingCode>
+    <CurrencyCode>HKD</CurrencyCode>
+    <CourierMessage>For testing purpose only. Please do not ship</CourierMessage>
+    <DestinationServiceArea>
+        <ServiceAreaCode>KUL</ServiceAreaCode>
+    </DestinationServiceArea>
+    <OriginServiceArea>
+        <ServiceAreaCode>HKG</ServiceAreaCode>
+    </OriginServiceArea>
+    <Rated>N</Rated>
+    <InsuredAmount>10.00</InsuredAmount>
+    <WeightUnit>K</WeightUnit>
+    <ChargeableWeight>2.5</ChargeableWeight>
+    <DimensionalWeight>46.8</DimensionalWeight>
+    <CountryCode>HK</CountryCode>
+    <Barcodes>
+        <AWBBarCode/>
+        <OriginDestnBarcode/>
+    </Barcodes>
+    <Piece>2</Piece>
+    <Contents>For testing purpose only. Please do not ship</Contents>
+    <Reference>
+        <ReferenceID>HK international shipnment</ReferenceID>
+        <ReferenceType>St</ReferenceType>
+    </Reference>
+    <Consignee>
+        <CompanyName>IBM Malaysia Sdn Bhd</CompanyName>
+        <AddressLine>19th Floor, Plaza IBM</AddressLine>
+        <AddressLine>No. 8, First Avenue,</AddressLine>
+        <AddressLine>Persiaran Bandar Utama</AddressLine>
+        <City>Petaling Jaya</City>
+        <Division>SELANGOR</Division>
+        <DivisionCode>40</DivisionCode>
+        <PostalCode>47800</PostalCode>
+        <CountryCode>MY</CountryCode>
+        <CountryName>Malaysia</CountryName>
+        <Contact>
+            <PersonName>Ms Ellie White</PersonName>
+            <PhoneNumber>11234325423</PhoneNumber>
+            <PhoneExtension>45232</PhoneExtension>
+            <FaxNumber>11234325423</FaxNumber>
+            <Telex>454586</Telex>
+            <Email>test@dhl.com</Email>
+        </Contact>
+    </Consignee>
+    <Shipper>
+        <ShipperID>630029857</ShipperID>
+        <CompanyName>Fujitsu Denso International Limited</CompanyName>
+        <AddressLine>Unit 603, 05-07,</AddressLine>
+        <AddressLine>Bio-Informatics Centre</AddressLine>
+        <City>Kowloon</City>
+        <DivisionCode>Shatin</DivisionCode>
+        <CountryCode>HK</CountryCode>
+        <CountryName>Hong Kong</CountryName>
+        <Contact>
+            <PersonName>santa santa</PersonName>
+            <PhoneNumber>15356456364</PhoneNumber>
+            <PhoneExtension>6536</PhoneExtension>
+            <FaxNumber>17456356365</FaxNumber>
+            <Telex>74558</Telex>
+            <Email>aaa@test.com</Email>
+        </Contact>
+    </Shipper>
+    <CustomerID>131297</CustomerID>
+    <ShipmentDate>2015-11-15</ShipmentDate>
+    <GlobalProductCode>P</GlobalProductCode>
+    <SpecialService>
+        <SpecialServiceType>A</SpecialServiceType>
+        <SpecialServiceDesc/>
+    </SpecialService>
+    <SpecialService>
+        <SpecialServiceType>I</SpecialServiceType>
+        <SpecialServiceDesc/>
+    </SpecialService>
+    <Billing>
+        <ShipperAccountNumber>630029857</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <DutyPaymentType>R</DutyPaymentType>
+    </Billing>
+    <Dutiable>
+        <DeclaredValue>50.50</DeclaredValue>
+        <DeclaredCurrency>HKD</DeclaredCurrency>
+        <ShipperEIN>ShipperEIN</ShipperEIN>
+    </Dutiable></res:ShipmentResponse>

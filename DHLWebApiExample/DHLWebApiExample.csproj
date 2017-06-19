@@ -34,7 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +45,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DHLApi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Address.cs" />
+    <Compile Include="ViewModels\BkgDetails.cs" />
+    <Compile Include="ViewModels\DHLResponse.cs" />
+    <Compile Include="ViewModels\Dutiable.cs" />
+    <Compile Include="ViewModels\Piece.cs" />
+    <Compile Include="ViewModels\ReponsePieceDetails.cs" />
+    <Compile Include="ViewModels\ResponseAWBInfo.cs" />
+    <Compile Include="ViewModels\ResponseConsignee.cs" />
+    <Compile Include="ViewModels\ResponsePieceInfo.cs" />
+    <Compile Include="ViewModels\ResponsePieces.cs" />
+    <Compile Include="ViewModels\ResponseShipmentEvent.cs" />
+    <Compile Include="ViewModels\ResponseShipmentInfo.cs" />
+    <Compile Include="ViewModels\ResponseShipper.cs" />
+    <Compile Include="ViewModels\ServiceHeader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Xml\BookPickupRequest_GlobalAP_Valid1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\BookPickupResponse_GlobalAP_Valid1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\Response.xml" />
+    <Content Include="Xml\ShipmentResponse_ShipmentValidateRequest_Global_AP_RegularShpmt.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\ShipmentValidateRequest_Global_AP_RegularShpmt.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\TrackingRequest_MultipleLP_PieceEnabled_B_1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\TrackingResponse_MultipleLP_PieceEnabled_B_1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\Valid3_Capability_EU_NonEU_Dutiable_Response.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\Valid3_Capability_EU_NonEU_Dutiable_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

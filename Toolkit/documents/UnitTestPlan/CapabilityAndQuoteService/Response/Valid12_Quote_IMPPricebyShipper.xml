@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><res:DCTResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com DCT-Response.xsd'><GetQuoteResponse><Response><ServiceHeader><MessageTime>2011-08-16T12:29:35.627+01:00</MessageTime><MessageReference>1234567890123456789012345678901</MessageReference><SiteID>TestSiteID</SiteID></ServiceHeader></Response><Note><Condition><ConditionCode>3024</ConditionCode><ConditionData>Postcode format wrong.</ConditionData></Condition></Note></GetQuoteResponse></res:DCTResponse>
+

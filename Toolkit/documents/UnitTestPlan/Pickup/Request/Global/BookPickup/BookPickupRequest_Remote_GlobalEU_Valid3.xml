@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:BookPURequest xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com
+book-pickup-global-req-2.0.xsd" schemaVersion="2.0">
+       <Request>
+        <ServiceHeader>
+            <MessageTime>2013-08-03T09:30:47-05:00</MessageTime>
+            <MessageReference>Esteemed Courier Service of DHL</MessageReference>
+            <SiteID>CustomerSiteID</SiteID>
+            <Password>CustomerPassword</Password>
+        </ServiceHeader>
+    </Request>
+	<RegionCode>EU</RegionCode>
+    <Requestor>
+        <AccountType>D</AccountType>
+        <AccountNumber>950000002</AccountNumber>
+        <RequestorContact>
+            <PersonName>Rikhil</PersonName>
+            <Phone>23162</Phone>
+        </RequestorContact>
+		<CompanyName>EADCI ltd</CompanyName>
+		<Address1>dhl cyberjaya</Address1>
+        <Address2>norfolk+st</Address2>
+		<City>Singapore</City>
+        <CountryCode>DK</CountryCode>
+		<PostalCode>6000</PostalCode>
+    </Requestor>
+    <Place>
+        <LocationType>B</LocationType>
+        <CompanyName>String</CompanyName>
+        <Address1>dhl prage</Address1>
+        <Address2>norfolk+st</Address2>
+        <PackageLocation>String</PackageLocation>
+        <City>String</City>
+        <StateCode>CN</StateCode>
+		<DivisionName>sd</DivisionName>
+        <CountryCode>GB</CountryCode>		
+        <PostalCode>WC2N 5HX</PostalCode>
+    </Place>
+    <Pickup>
+        <PickupDate>2017-03-24</PickupDate>
+        <ReadyByTime>10:20</ReadyByTime>
+        <CloseTime>19:20</CloseTime>
+        <AfterHoursClosingTime>20:20</AfterHoursClosingTime>
+        <AfterHoursLocation>String</AfterHoursLocation>
+		<Pieces>2</Pieces>
+		<RemotePickupFlag>Y</RemotePickupFlag>
+ 	    <weight>
+            <Weight>20</Weight>
+            <WeightUnit>L</WeightUnit>
+        </weight>
+    </Pickup>
+    <PickupContact>
+        <PersonName>Subhayu</PersonName>
+        <Phone>4801313131</Phone>
+    </PickupContact>
+    <ShipmentDetails>
+        <AccountType>D</AccountType>
+        <AccountNumber>950000002</AccountNumber>        
+        <BillToAccountNumber>950000002</BillToAccountNumber>
+        <AWBNumber>7520067111</AWBNumber>
+        <NumberOfPieces>1</NumberOfPieces>
+        <Weight>10</Weight>
+        <WeightUnit>L</WeightUnit>
+        <GlobalProductCode>P</GlobalProductCode>
+		<LocalProductCode>P</LocalProductCode>
+		<DestinationServiceAreaCode>HKG</DestinationServiceAreaCode>
+        <DoorTo>DD</DoorTo>
+        <DimensionUnit>I</DimensionUnit>
+        <InsuredAmount>10.00</InsuredAmount>
+        <InsuredCurrencyCode>USD</InsuredCurrencyCode>
+        <Pieces>
+            <Weight>10</Weight>
+            <Width>2</Width>
+            <Height>2</Height>
+            <Depth>2</Depth>
+        </Pieces>
+        <SpecialService>S</SpecialService>
+        <SpecialService>I</SpecialService>
+    </ShipmentDetails>    
+	<ConsigneeDetails>
+		<CompanyName>DHL ITS, CBJ</CompanyName>
+		<AddressLine>Jalan teknokrat, Cyberjaya 63000</AddressLine>
+		<City>Cyberjaya</City>
+		<CountryCode>MY</CountryCode>
+		<Contact>
+			<PersonName>Sathish</PersonName>
+			<Phone>123456789</Phone>
+			<Email>abc@abc.com</Email>
+		</Contact>
+	</ConsigneeDetails>
+</req:BookPURequest>

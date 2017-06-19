@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2016-11-01T06:55:59+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>CustomerSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>AM</RegionCode>
+    <Note>
+        <ActionNote>Success</ActionNote>
+    </Note>
+    <AirwayBillNumber>3882392356</AirwayBillNumber>
+    <BillingCode>DSA</BillingCode>
+    <CurrencyCode>HKD</CurrencyCode>
+    <CourierMessage>For testing purpose only. Please do not ship</CourierMessage>
+    <DestinationServiceArea>
+        <ServiceAreaCode>KUL</ServiceAreaCode>
+        <FacilityCode>EPJ</FacilityCode>
+        <InboundSortCode>.</InboundSortCode>
+    </DestinationServiceArea>
+    <OriginServiceArea>
+        <ServiceAreaCode>ZYP</ServiceAreaCode>
+        <FacilityCode>JR3</FacilityCode>
+        <OutboundSortCode>.</OutboundSortCode>
+    </OriginServiceArea>
+    <PackageCharge>0</PackageCharge>
+    <Rated>Y</Rated>
+    <ShippingCharge>0.000</ShippingCharge>
+    <InsuredAmount>10.00</InsuredAmount>
+    <WeightUnit>K</WeightUnit>
+    <ChargeableWeight>2.5</ChargeableWeight>
+    <DimensionalWeight>46.8</DimensionalWeight>
+    <CountryCode>US</CountryCode>
+    <Barcodes>
+        <AWBBarCode>iVBORw0KGgoAAAANSUhEUgAAAYwAAABeAQMAAAAKdrGZAAAABlBMVEX///8AAABVwtN+AAAAaUlEQVR42mNkYGBIyL8wZcutG2wTzVN1u3ZriM1tm283t4EtvSxAx5rbrsaaYbNmF0N4T8DXe/OVFjAwMDGQDEa1jGoZ1TKqZVTLqJZRLaNaRrWMahnVMqplVMuollEto1pGtYxqIRUAAPmvE7zno86TAAAAAElFTkSuQmCC</AWBBarCode>
+        <OriginDestnBarcode>iVBORw0KGgoAAAANSUhEUgAAATUAAABeAQMAAAB4lRFqAAAABlBMVEX///8AAABVwtN+AAAAVklEQVR42mNkYGBIyL8w5cqJU2zpZQHMFyaapzIEy587oLtsypWjur+Eo/IvTLzAwMDEQBwYVTeqblTdqLpRdaPqRtWNqhtVN6puVN2oulF1o+qooQ4AzuARvBGQ0hYAAAAASUVORK5CYII=</OriginDestnBarcode>
+        <ClientIDBarCode>iVBORw0KGgoAAAANSUhEUgAAARgAAAAkAQMAAABoj7etAAAABlBMVEX///8AAABVwtN+AAAAPElEQVR42mNkYGBIyL8wZcutGwyvUp4yBMtriM295XDlxCm29MRU31ufpRgYmBgIg1E1o2pG1YyqGepqAKFJD0hDGoJfAAAAAElFTkSuQmCC</ClientIDBarCode>
+        <DHLRoutingBarCode>iVBORw0KGgoAAAANSUhEUgAAAcIAAABeAQMAAACKBYaKAAAABlBMVEX///8AAABVwtN+AAAAb0lEQVR42u3LIQ5AcABG8Y/NpsgmuY4zKGyKpJviDgITjOIYqmuQcAX/whk023vplZ8lqfSqzS+m7k6PwbjpnHRWmLV7riVS7zSbU8sUo/xais/FrMMVvGvra0gkEolEIpFIJBKJRCKRSCQS+Tf5AGI2GLyvdyz/AAAAAElFTkSuQmCC</DHLRoutingBarCode>
+    </Barcodes>
+    <Piece>2</Piece>
+    <Contents>For testing purpose only. Please do not ship</Contents>
+    <Reference>
+        <ReferenceID>HK international shipnment</ReferenceID>
+        <ReferenceType>St</ReferenceType>
+    </Reference>
+    <Consignee>
+        <CompanyName>IBM Malaysia Sdn Bhd</CompanyName>
+        <AddressLine>19th Floor, Plaza IBM</AddressLine>
+        <AddressLine>No. 8, First Avenue,</AddressLine>
+        <AddressLine>Persiaran Bandar Utama</AddressLine>
+        <City>Petaling Jaya</City>
+        <PostalCode>47800</PostalCode>
+        <CountryCode>MY</CountryCode>
+        <CountryName>Malaysia</CountryName>
+        <Contact>
+            <PersonName>Ms Ellie White</PersonName>
+            <PhoneNumber>11234325423</PhoneNumber>
+            <PhoneExtension>45232</PhoneExtension>
+            <FaxNumber>11234325423</FaxNumber>
+            <Telex>454586</Telex>
+            <Email>test@dhl.com</Email>
+        </Contact>
+    </Consignee>
+    <Shipper>
+        <ShipperID>630029857</ShipperID>
+        <CompanyName>Fujitsu Denso International Limited</CompanyName>
+        <AddressLine>Unit 603, 05-07,</AddressLine>
+        <AddressLine>Bio-Informatics Centre</AddressLine>
+        <City>NEW YORK</City>
+        <Division>New York</Division>
+        <DivisionCode>NY</DivisionCode>
+        <PostalCode>10001</PostalCode>
+        <CountryCode>US</CountryCode>
+        <CountryName>UNITED STATES OF AMERICA</CountryName>
+        <Contact>
+            <PersonName>santa santa</PersonName>
+            <PhoneNumber>15356456364</PhoneNumber>
+            <PhoneExtension>6536</PhoneExtension>
+            <FaxNumber>17456356365</FaxNumber>
+            <Telex>74558</Telex>
+            <Email>aaa@test.com</Email>
+        </Contact>
+    </Shipper>
+    <CustomerID>300902</CustomerID>
+    <ShipmentDate>2016-11-03</ShipmentDate>
+    <GlobalProductCode>P</GlobalProductCode>
+    <SpecialService>
+        <SpecialServiceType>WY</SpecialServiceType>
+        <SpecialServiceDesc>PAPERLESS TRADE</SpecialServiceDesc>
+    </SpecialService>
+    <Billing>
+        <ShipperAccountNumber>847486904</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <DutyPaymentType>R</DutyPaymentType>
+    </Billing>
+    <Dutiable>
+        <DeclaredValue>50.50</DeclaredValue>
+        <DeclaredCurrency>HKD</DeclaredCurrency>
+        <ShipperEIN>ShipperEIN</ShipperEIN>
+    </Dutiable>
+    <DHLRoutingCode>MY47800+48000001</DHLRoutingCode>
+    <DHLRoutingDataId>2L</DHLRoutingDataId>
+    <ProductContentCode>WPX</ProductContentCode>
+    <ProductShortName>EXPRESS WORLDWIDE</ProductShortName>
+    <InternalServiceCode>C</InternalServiceCode>
+    <InternalServiceCode>PLT</InternalServiceCode>
+    <DeliveryDateCode/>
+    <DeliveryTimeCode/>
+    <Pieces>
+        <Piece>
+            <PieceNumber>1</PieceNumber>
+            <Depth>20.00</Depth>
+            <Width>30.00</Width>
+            <Height>40.00</Height>
+            <Weight>0.50</Weight>
+            <PackageType>EE</PackageType>
+            <DimWeight>4.8</DimWeight>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD013036538165700142</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAa0lEQVR42mNmYGCo9No3T/942Z65Vz6Yb2lLLReJ1rx75YPn3louG/drV1ZeWZFju1RP/zjLN6Udj1mPMDAwMZAORvWM6hnVM6pnVM+onlE9o3pG9YzqGdUzqmdUz6ieUT2jekb1jOoZTHoAEmUYvSalhGQAAAAASUVORK5CYII=</LicensePlateBarCode>
+        </Piece>
+        <Piece>
+            <PieceNumber>2</PieceNumber>
+            <Depth>50.00</Depth>
+            <Width>60.00</Width>
+            <Height>70.00</Height>
+            <Weight>2.00</Weight>
+            <PackageType>EE</PackageType>
+            <DimWeight>42.0</DimWeight>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD013036538165700143</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAbElEQVR42mNmYGCo9No3T/942Z65Vz6Yb2lLLReJ1rx75YPn3louG/drV1ZeWZFju1Rvx+MvRxf9eMx6hIGBiYF0MKpnVM+onlE9o3pG9YzqGdUzqmdUz6ieUT2jekb1jOoZ1TOqZ1TPYNIDAJewGuFzHigYAAAAAElFTkSuQmCC</LicensePlateBarCode>
+        </Piece>
+    </Pieces>
+    <PLTStatus>A</PLTStatus>
+    <QtdSInAdCur>
+        <CurrencyCode/>
+        <CurrencyRoleTypeCode>BILLC</CurrencyRoleTypeCode>
+        <PackageCharge>0</PackageCharge>
+        <ShippingCharge>0.000</ShippingCharge>
+    </QtdSInAdCur>
+    <QtdSInAdCur>
+        <CurrencyCode>USD</CurrencyCode>
+        <CurrencyRoleTypeCode>PULCL</CurrencyRoleTypeCode>
+        <PackageCharge>0</PackageCharge>
+        <ShippingCharge>0.000</ShippingCharge>
+    </QtdSInAdCur>
+    <QtdSInAdCur>
+        <CurrencyCode>USD</CurrencyCode>
+        <CurrencyRoleTypeCode>BASEC</CurrencyRoleTypeCode>
+        <PackageCharge>0</PackageCharge>
+        <ShippingCharge>0.000</ShippingCharge>
+    </QtdSInAdCur>
+    <ODDURLLink>https://odd-stag.dhl.com/oddonlinepostuat/MY/UV05fb</ODDURLLink></res:ShipmentResponse>

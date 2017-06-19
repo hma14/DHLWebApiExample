@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:TrackingResponse xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com TrackingResponse.xsd">
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2014-08-26T11:11:03+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <AWBInfo>
+        <AWBNumber>9434244680</AWBNumber>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <ShipmentInfo>
+            <OriginServiceArea>
+                <ServiceAreaCode>CAN</ServiceAreaCode>
+                <Description>GUANGZHOU - CHINA, PEOPLES REPUBLIC</Description>
+            </OriginServiceArea>
+            <DestinationServiceArea>
+                <ServiceAreaCode>BLR</ServiceAreaCode>
+                <Description>BANGALORE - INDIA</Description>
+            </DestinationServiceArea>
+            <ShipperName>IMAGE</ShipperName>
+            <ShipperAccountNumber>966742370</ShipperAccountNumber>
+            <ConsigneeName>BEST YOUNG  ENG  PRT LTD</ConsigneeName>
+            <ShipmentDate>2014-07-31T15:09:00</ShipmentDate>
+            <Pieces>1</Pieces>
+            <Weight>12.6</Weight>
+            <WeightUnit>K</WeightUnit>
+            <GlobalProductCode>P</GlobalProductCode>
+            <ShipmentDesc>CLEAR WATCH GLASS MODEL  STEEL WPX</ShipmentDesc>
+            <DlvyNotificationFlag>N</DlvyNotificationFlag>
+            <Shipper>
+                <City>GUANGZHOU</City>
+                <PostalCode>510100</PostalCode>
+                <CountryCode>CN</CountryCode>
+            </Shipper>
+            <Consignee>
+                <City>BANGALORE</City>
+                <PostalCode>560091</PostalCode>
+                <CountryCode>IN</CountryCode>
+            </Consignee>
+            <ShipperReference>
+                <ReferenceID>UWG KINPO</ReferenceID>
+            </ShipperReference>
+            <ShipmentEvent>
+                <Date>2014-07-31</Date>
+                <Time>15:09:00</Time>
+                <ServiceEvent>
+                    <EventCode>PU</EventCode>
+                    <Description>Shipment picked up</Description>
+                </ServiceEvent>
+                <Signatory>966742370</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>CAN</ServiceAreaCode>
+                    <Description>GUANGZHOU - CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-07-31</Date>
+                <Time>19:50:55</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at GUANGZHOU - CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceEvent>
+                <Signatory>SZX</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>CAN</ServiceAreaCode>
+                    <Description>GUANGZHOU - CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-07-31</Date>
+                <Time>19:53:02</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in GUANGZHOU - CHINA,
+                        PEOPLES REPUBLIC</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CAN</ServiceAreaCode>
+                    <Description>GUANGZHOU - CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-07-31</Date>
+                <Time>21:39:53</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at Sort Facility SHENZHEN -
+                        CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SZX</ServiceAreaCode>
+                    <Description>SHENZHEN - CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-07-31</Date>
+                <Time>21:58:25</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at SHENZHEN - CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceEvent>
+                <Signatory>HKG</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>SZX</ServiceAreaCode>
+                    <Description>SHENZHEN - CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-07-31</Date>
+                <Time>22:01:08</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in SHENZHEN - CHINA,
+                        PEOPLES REPUBLIC</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SZX</ServiceAreaCode>
+                    <Description>SHENZHEN - CHINA, PEOPLES REPUBLIC</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>00:32:32</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at Sort Facility HONG KONG -
+                        HONG KONG</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>HKG</ServiceAreaCode>
+                    <Description>HONG KONG - HONG KONG</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>00:38:45</Time>
+                <ServiceEvent>
+                    <EventCode>CR</EventCode>
+                    <Description>Clearance processing complete at HONG
+                        KONG - HONG KONG</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>HKG</ServiceAreaCode>
+                    <Description>HONG KONG - HONG KONG</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>03:18:47</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at HONG KONG - HONG KONG</Description>
+                </ServiceEvent>
+                <Signatory>BLR</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>HKG</ServiceAreaCode>
+                    <Description>HONG KONG - HONG KONG</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>03:32:55</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in HONG KONG - HONG KONG</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>HKG</ServiceAreaCode>
+                    <Description>HONG KONG - HONG KONG</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>08:32:09</Time>
+                <ServiceEvent>
+                    <EventCode>TR</EventCode>
+                    <Description>Transferred through SINGAPORE - SINGAPORE</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SIN</ServiceAreaCode>
+                    <Description>SINGAPORE - SINGAPORE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>10:59:02</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at Sort Facility BANGALORE - INDIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>12:31:00</Time>
+                <ServiceEvent>
+                    <EventCode>IC</EventCode>
+                    <Description>Processed for clearance at BANGALORE - INDIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>12:31:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>A specific certificate from the
+                        shipper or importer is required to validate the
+                        duty  tax free status of a shipment Please visit
+                        www.dhl.co.IN/Clearance to enter missing information</FurtherDetails>
+                    <NextSteps>A DHL representative
+                        www.dhl.co.IN/Clearance or
+                        customsINclearance@DHL.COM shall attempt to
+                        contact contact the importer or shipper or
+                        please contact DHL Customer Service for further assistance</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-01</Date>
+                <Time>17:16:00</Time>
+                <ServiceEvent>
+                    <EventCode>CD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-02</Date>
+                <Time>16:32:00</Time>
+                <ServiceEvent>
+                    <EventCode>CD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-03</Date>
+                <Time>21:11:00</Time>
+                <ServiceEvent>
+                    <EventCode>CD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-04</Date>
+                <Time>19:12:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>The shipment is pending completion
+                        of customs inspection.</FurtherDetails>
+                    <NextSteps>The status will be updated following
+                        customs inspection. A DHL representative shall
+                        attempt to contact the importer if additional
+                        requirements are necessary.</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-05</Date>
+                <Time>18:53:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>The shipment is pending completion
+                        of customs inspection.</FurtherDetails>
+                    <NextSteps>The status will be updated following
+                        customs inspection. A DHL representative shall
+                        attempt to contact the importer if additional
+                        requirements are necessary.</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-06</Date>
+                <Time>20:10:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>The shipment is pending completion
+                        of customs inspection.</FurtherDetails>
+                    <NextSteps>The status will be updated following
+                        customs inspection. A DHL representative shall
+                        attempt to contact the importer if additional
+                        requirements are necessary.</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-07</Date>
+                <Time>15:06:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>The shipment is pending completion
+                        of customs inspection.</FurtherDetails>
+                    <NextSteps>The status will be updated following
+                        customs inspection. A DHL representative shall
+                        attempt to contact the importer if additional
+                        requirements are necessary.</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-08</Date>
+                <Time>15:32:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>The shipment is pending completion
+                        of customs inspection.</FurtherDetails>
+                    <NextSteps>The status will be updated following
+                        customs inspection. A DHL representative shall
+                        attempt to contact the importer if additional
+                        requirements are necessary.</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-09</Date>
+                <Time>06:35:00</Time>
+                <ServiceEvent>
+                    <EventCode>CR</EventCode>
+                    <Description>Clearance processing complete at
+                        BANGALORE - INDIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-09</Date>
+                <Time>15:02:24</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at BANGALORE - INDIA</Description>
+                </ServiceEvent>
+                <Signatory>BLR</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-09</Date>
+                <Time>15:02:39</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in BANGALORE - INDIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-10</Date>
+                <Time>01:57:00</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at Sort Facility BANGALORE - INDIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-11</Date>
+                <Time>10:39:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in BANGALORE - INDIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-11</Date>
+                <Time>14:32:00</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at Sort Facility BANGALORE - INDIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-11</Date>
+                <Time>16:30:00</Time>
+                <ServiceEvent>
+                    <EventCode>RD</EventCode>
+                    <Description>Recipient refused delivery</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-12</Date>
+                <Time>12:55:00</Time>
+                <ServiceEvent>
+                    <EventCode>WC</EventCode>
+                    <Description>With delivery courier</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-12</Date>
+                <Time>13:00:00</Time>
+                <ServiceEvent>
+                    <EventCode>BA</EventCode>
+                    <Description>Address information needed; contact DHL</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-13</Date>
+                <Time>13:49:00</Time>
+                <ServiceEvent>
+                    <EventCode>BA</EventCode>
+                    <Description>Address information needed; contact DHL</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-14</Date>
+                <Time>08:00:00</Time>
+                <ServiceEvent>
+                    <EventCode>BA</EventCode>
+                    <Description>Address information needed; contact DHL</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2014-08-14</Date>
+                <Time>17:00:00</Time>
+                <ServiceEvent>
+                    <EventCode>OK</EventCode>
+                    <Description>Delivered - Signed for by</Description>
+                </ServiceEvent>
+                <Signatory>SEAL</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>BLR</ServiceAreaCode>
+                    <Description>BANGALORE - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+        </ShipmentInfo>
+    </AWBInfo>
+    <LanguageCode>en</LanguageCode>
+</req:TrackingResponse>
+

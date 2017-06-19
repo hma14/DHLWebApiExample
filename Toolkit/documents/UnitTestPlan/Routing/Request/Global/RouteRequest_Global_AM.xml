@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:RouteRequest xmlns:ns1="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com
+routing-global-req.xsd" schemaVersion="1.0">
+	<Request>
+		<ServiceHeader>
+			<MessageTime>2002-08-20T11:28:56.000-08:00</MessageTime>
+			<MessageReference>Routing_EU_RegionalSchema____</MessageReference>
+			<SiteID>routingpst</SiteID>
+			<Password>testPwd</Password>
+		</ServiceHeader>
+	</Request>
+	<RegionCode>EU</RegionCode>
+	<RequestType>O</RequestType>
+	<Address1>Suit 333</Address1>
+	<Address2>333 Twin</Address2>
+	<Address3></Address3>
+	<PostalCode>TW4</PostalCode>
+	<City>Hounslow</City>
+	<Division>CA</Division>
+	<CountryCode>GB</CountryCode>
+	<CountryName>United Kingdom</CountryName>
+	<OriginCountryCode>GB</OriginCountryCode>
+</ns1:RouteRequest>

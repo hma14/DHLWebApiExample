@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2015-11-11T14:35:05+01:00</MessageTime>
+            <MessageReference>111222333444555666777888999</MessageReference>
+            <SiteID>CustomerSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>AM</RegionCode>
+    <Note>
+        <ActionNote>Success</ActionNote>
+    </Note>
+    <AirwayBillNumber>1100000016</AirwayBillNumber>
+    <BillingCode>DSA</BillingCode>
+    <CurrencyCode>USD</CurrencyCode>
+    <CourierMessage>Global AM Int PLT shpmt</CourierMessage>
+    <DestinationServiceArea>
+        <ServiceAreaCode>BRU</ServiceAreaCode>
+        <FacilityCode>AND</FacilityCode>
+        <InboundSortCode>.</InboundSortCode>
+    </DestinationServiceArea>
+    <OriginServiceArea>
+        <ServiceAreaCode>PHX</ServiceAreaCode>
+        <FacilityCode>PHX</FacilityCode>
+        <OutboundSortCode>.</OutboundSortCode>
+    </OriginServiceArea>
+    <PackageCharge>290.100</PackageCharge>
+    <Rated>Y</Rated>
+    <ShippingCharge>337.010</ShippingCharge>
+    <InsuredAmount>120.00</InsuredAmount>
+    <WeightUnit>K</WeightUnit>
+    <ChargeableWeight>10.0</ChargeableWeight>
+    <DimensionalWeight>1200.0</DimensionalWeight>
+    <ReadyByTime>17:00</ReadyByTime>
+    <PickupCharge>0.00</PickupCharge>
+    <CallInTime>16:00</CallInTime>
+    <DaysAdvanceNotice>0</DaysAdvanceNotice>
+    <CountryCode>US</CountryCode>
+    <Barcodes>
+        <AWBBarCode>iVBORw0KGgoAAAANSUhEUgAAAYwAAABeAQMAAAAKdrGZAAAABlBMVEX///8AAABVwtN+AAAAZ0lEQVR42mNkYGBIyL8wZbPa4QsTzcQCguU1fs385XDlxKn/y+wCvhp9blg5ASR5Krwn4Ou9+UoLGBiYGEgGo1pGtYxqGdUyqmVUy6iWUS2jWka1jGoZ1TKqZVTLqJZRLaNaRrWQCgCcLRm8+/BwawAAAABJRU5ErkJggg==</AWBBarCode>
+        <OriginDestnBarcode>iVBORw0KGgoAAAANSUhEUgAAATUAAABeAQMAAAB4lRFqAAAABlBMVEX///8AAABVwtN+AAAAVklEQVR42mNkYGBIyL8whdvO9d6UK0e/3puyeZrrvfkaYnOvlzGm6v4Sjsq/MPECAwMTA3FgVN2oulF1o+pG1Y2qG1U3qm5U3ai6UXWj6kbVjaqjhjoAdiwSvEkaxBcAAAAASUVORK5CYII=</OriginDestnBarcode>
+        <ClientIDBarCode>iVBORw0KGgoAAAANSUhEUgAAARgAAAAkAQMAAABoj7etAAAABlBMVEX///8AAABVwtN+AAAAPElEQVR42mNkYGBIyL8wZcutGwyvUp4yBMtriM295XDlxCm29MRU31ufpRgYmBgIg1E1o2pG1YyqGepqAKFJD0hDGoJfAAAAAElFTkSuQmCC</ClientIDBarCode>
+        <DHLRoutingBarCode>iVBORw0KGgoAAAANSUhEUgAAAawAAABeAQMAAABFK7JJAAAABlBMVEX///8AAABVwtN+AAAAaUlEQVR42u3LoRVAUACG0Z/gKLKjOK+YhRlMIOko7xUDSBqSUQyhaFYgsYMkfLdfT1ITdUdcL+PtNpuEqYrJJjZ3g06XXZ7Rs1cKZil2TV+ubW4kX5/QaDQajUaj0Wg0Go1Go9FotH+3F1GxE7xDV+SvAAAAAElFTkSuQmCC</DHLRoutingBarCode>
+    </Barcodes>
+    <Piece>1</Piece>
+    <Contents>Global AM Int PLT shpmt</Contents>
+    <Reference>
+        <ReferenceID>reference</ReferenceID>
+        <ReferenceType>St</ReferenceType>
+    </Reference>
+    <Consignee>
+        <CompanyName>IBM Bruse Pte Ltd</CompanyName>
+        <AddressLine>9 Business Park Central 1</AddressLine>
+        <AddressLine>3th Floor</AddressLine>
+        <AddressLine>The IBM Place</AddressLine>
+        <City>Brussels</City>
+        <PostalCode>1060</PostalCode>
+        <CountryCode>BE</CountryCode>
+        <CountryName>Belgium</CountryName>
+        <Contact>
+            <PersonName>Mrs Orlander</PersonName>
+            <PhoneNumber>506-851-2271</PhoneNumber>
+            <PhoneExtension>7862</PhoneExtension>
+            <FaxNumber>506-851-7403</FaxNumber>
+            <Telex>506-851-7121</Telex>
+            <Email>c_orlander@gc.ca</Email>
+        </Contact>
+    </Consignee>
+    <Shipper>
+        <ShipperID>850925434</ShipperID>
+        <CompanyName>shipper company privated limited 12</CompanyName>
+        <RegisteredAccount>850925434</RegisteredAccount>
+        <AddressLine>238 850925434 Drive</AddressLine>
+        <City>Scottsdale</City>
+        <Division>Arizona</Division>
+        <DivisionCode>AZ</DivisionCode>
+        <PostalCode>85260</PostalCode>
+        <CountryCode>US</CountryCode>
+        <CountryName>United States of America</CountryName>
+        <Contact>
+            <PersonName>Ms Lucian</PersonName>
+            <PhoneNumber>1 23 8613402</PhoneNumber>
+            <PhoneExtension>3403</PhoneExtension>
+            <FaxNumber>1 905 8613411</FaxNumber>
+            <Telex>1245</Telex>
+            <Email>test@email.com</Email>
+        </Contact>
+    </Shipper>
+    <CustomerID>300902</CustomerID>
+    <ShipmentDate>2015-11-16</ShipmentDate>
+    <GlobalProductCode>P</GlobalProductCode>
+    <SpecialService>
+        <SpecialServiceType>WY</SpecialServiceType>
+        <SpecialServiceDesc>PAPERLESS TRADE</SpecialServiceDesc>
+    </SpecialService>
+    <SpecialService>
+        <SpecialServiceType>DD</SpecialServiceType>
+        <SpecialServiceDesc>DUTIES &amp; TAXES PAID</SpecialServiceDesc>
+    </SpecialService>
+    <Billing>
+        <ShipperAccountNumber>850925434</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <BillingAccountNumber>850925434</BillingAccountNumber>
+        <DutyPaymentType>S</DutyPaymentType>
+        <DutyAccountNumber>850925434</DutyAccountNumber>
+    </Billing>
+    <Dutiable>
+        <DeclaredValue>200.00</DeclaredValue>
+        <DeclaredCurrency>USD</DeclaredCurrency>
+        <ScheduleB>3002905110</ScheduleB>
+        <ExportLicense>D123456</ExportLicense>
+        <ShipperEIN>112233445566</ShipperEIN>
+        <ShipperIDType>S</ShipperIDType>
+        <ImportLicense>ImportLic</ImportLicense>
+        <ConsigneeEIN>ConEIN2123</ConsigneeEIN>
+        <TermsOfTrade>DAP</TermsOfTrade>
+    </Dutiable>
+    <NewShipper>Y</NewShipper>
+    <DHLRoutingCode>BE1060+48000001</DHLRoutingCode>
+    <DHLRoutingDataId>2L</DHLRoutingDataId>
+    <ProductContentCode>WPX</ProductContentCode>
+    <ProductShortName>EXPRESS WORLDWIDE</ProductShortName>
+    <InternalServiceCode>C</InternalServiceCode>
+    <InternalServiceCode>DTP</InternalServiceCode>
+    <InternalServiceCode>PLT</InternalServiceCode>
+    <DeliveryDateCode/>
+    <DeliveryTimeCode/>
+    <Pieces>
+        <Piece>
+            <PieceNumber>1</PieceNumber>
+            <Depth>300</Depth>
+            <Width>100</Width>
+            <Height>200</Height>
+            <Weight>10.0</Weight>
+            <PackageType>EE</PackageType>
+            <DimWeight>1200.0</DimWeight>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD010000000000000002</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAYElEQVR42u3LIRJAQBxG8W/NWElR5L2WE5Als8E/bpYUM3sbxyC6BckBNOG99MrPSZrquJ1pnMNulTWXz62pk+vls96VyrDew7EkqdD3MBgMBoPBYDAYDAaDwWAwmD+ZBxTWD7xX4z4wAAAAAElFTkSuQmCC</LicensePlateBarCode>
+        </Piece>
+    </Pieces>
+    <PLTStatus>A</PLTStatus>
+    <QtdSInAdCur>
+        <CurrencyCode>USD</CurrencyCode>
+        <CurrencyRoleTypeCode>BILLC</CurrencyRoleTypeCode>
+        <PackageCharge>290.100</PackageCharge>
+        <ShippingCharge>337.010</ShippingCharge>
+    </QtdSInAdCur>
+    <QtdSInAdCur>
+        <CurrencyCode>USD</CurrencyCode>
+        <CurrencyRoleTypeCode>PULCL</CurrencyRoleTypeCode>
+        <PackageCharge>290.100</PackageCharge>
+        <ShippingCharge>337.010</ShippingCharge>
+    </QtdSInAdCur>
+    <QtdSInAdCur>
+        <CurrencyCode>USD</CurrencyCode>
+        <CurrencyRoleTypeCode>BASEC</CurrencyRoleTypeCode>
+        <PackageCharge>290.100</PackageCharge>
+        <ShippingCharge>337.010</ShippingCharge>
+    </QtdSInAdCur></res:ShipmentResponse>

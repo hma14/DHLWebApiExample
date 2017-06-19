@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:RouteRequest xmlns:ns1="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com
+routing-global-req.xsd" schemaVersion="1.0">
+	<Request>
+		<ServiceHeader>
+			<MessageTime>2013-08-04T11:28:56.000-08:00</MessageTime>
+			<MessageReference>1234567890123456789012345678901</MessageReference>
+			<SiteID>TestSiteID</SiteID>
+			<Password>testPwd</Password>
+		</ServiceHeader>
+	</Request>
+        <RegionCode>EU</RegionCode>
+	<RequestType>O</RequestType>
+	<Address1>Oracle Parkway,</Address1>
+	<Address2>Thames Valley Park (TVP)</Address2>
+	<Address3>Berkshire</Address3>
+	<PostalCode>RG6 1RA</PostalCode>
+	<City>Reading</City>
+	<Division>RE</Division>
+	<CountryCode>GB</CountryCode>
+	<CountryName>United Kingdom</CountryName>
+	<OriginCountryCode>GB</OriginCountryCode>
+</ns1:RouteRequest>

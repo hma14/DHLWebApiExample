@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><res:BookPUResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com pickup-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-10-10T03:47:23+01:00</MessageTime>
+            <MessageReference>Esteemed Courier Service of DHL</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>AM</RegionCode>
+    <Note>
+        <ActionNote>Success</ActionNote>
+        <Condition>
+            <ConditionCode>PU021</ConditionCode>
+            <ConditionData> NOTICE!  Packages picked up after hours may
+                be inspected by a DHL Courier for FAA security purposes.</ConditionData>
+        </Condition>
+    </Note>
+    <ConfirmationNumber>3674</ConfirmationNumber>
+    <ReadyByTime>10:30</ReadyByTime>
+    <NextPickupDate>2013-10-09</NextPickupDate>
+    <CallInTime>08:30</CallInTime>
+    <OriginSvcArea>BEL</OriginSvcArea></res:BookPUResponse>
+

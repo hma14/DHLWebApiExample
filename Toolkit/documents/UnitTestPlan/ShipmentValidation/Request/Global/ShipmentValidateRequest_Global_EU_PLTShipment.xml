@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:ShipmentRequest xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com ship-val-global-req.xsd" schemaVersion="5.0">
+	<Request>
+		<ServiceHeader>
+			<MessageTime>2013-07-30T10:31:01.000-08:00</MessageTime>
+			<MessageReference>111222333444555666777888999</MessageReference>
+			<SiteID>CustomerSiteID</SiteID>
+			<Password>CustomerPassword</Password>
+		</ServiceHeader>
+	</Request>
+	<RegionCode>EU</RegionCode>
+	<NewShipper>N</NewShipper>
+	<LanguageCode>en</LanguageCode>
+	<PiecesEnabled>Y</PiecesEnabled>
+	<Billing>
+		<ShipperAccountNumber>130000279</ShipperAccountNumber>
+		<ShippingPaymentType>S</ShippingPaymentType>
+		<BillingAccountNumber>130000279</BillingAccountNumber>
+		<DutyPaymentType>R</DutyPaymentType>
+	</Billing>
+	<Consignee>
+		<CompanyName>ABM Life Centre</CompanyName>
+		<AddressLine>Central 1</AddressLine>
+		<AddressLine>Changa Business Park</AddressLine>
+		<City>Beijing</City>
+		<Division>cn</Division>
+		<PostalCode>100085</PostalCode>
+		<CountryCode>CN</CountryCode>
+		<CountryName>China</CountryName>
+		<Contact>
+			<PersonName>raobeert bere</PersonName>
+			<PhoneNumber>11234-325423</PhoneNumber>
+			<PhoneExtension>45232</PhoneExtension>
+			<FaxNumber>11234325423</FaxNumber>
+			<Telex>454586</Telex>
+			<Email>plyTo>dsa@gb.dhl.com</Email>
+		</Contact>
+	</Consignee>
+	<Commodity>
+		<CommodityCode>cc</CommodityCode>
+		<CommodityName>cn</CommodityName>
+	</Commodity>
+	<Dutiable>
+		<DeclaredValue>150.00</DeclaredValue>
+		<DeclaredCurrency>GBP</DeclaredCurrency>
+		<ScheduleB>3002905110</ScheduleB>
+		<ExportLicense>D123456</ExportLicense>
+		<ShipperEIN>112233445566</ShipperEIN>
+		<ShipperIDType>S</ShipperIDType>
+		<ImportLicense>ImportLic</ImportLicense>
+		<ConsigneeEIN>ConEIN2123</ConsigneeEIN>
+		<TermsOfTrade>DAP</TermsOfTrade>
+	</Dutiable>
+	<Reference>
+		<ReferenceID>reference</ReferenceID>
+		<ReferenceType>St</ReferenceType>
+	</Reference>
+	<ShipmentDetails>
+		<NumberOfPieces>1</NumberOfPieces>
+		<Pieces>
+			<Piece>
+				<PieceID>1</PieceID>
+				<PackageType>EE</PackageType>
+				<Weight>20</Weight>
+				<DimWeight>1200.0</DimWeight>
+				<Width>2102</Width>
+				<Height>220</Height>
+				<Depth>200</Depth>
+			</Piece>		
+		</Pieces>
+		<Weight>20</Weight>
+		<WeightUnit>K</WeightUnit>
+		<GlobalProductCode>P</GlobalProductCode>
+		<LocalProductCode>P</LocalProductCode>
+		<Date>2015-11-16</Date>
+		<Contents>For testing only. Please do not ship</Contents>
+		<DoorTo>DD</DoorTo>
+		<DimensionUnit>C</DimensionUnit>
+		<PackageType>EE</PackageType>
+		<IsDutiable>Y</IsDutiable>
+		<CurrencyCode>GBP</CurrencyCode>
+	</ShipmentDetails>
+	<Shipper>
+		<ShipperID>130000279</ShipperID>
+		<CompanyName>University of QA</CompanyName>
+		<RegisteredAccount>130009755</RegisteredAccount>
+		<AddressLine>Senate House</AddressLine>
+		<AddressLine>Malet Street</AddressLine>
+		<City>London</City>
+		<Division>wc</Division>
+		<PostalCode>WC1E 7HU</PostalCode>
+		<CountryCode>GB</CountryCode>
+		<CountryName>United Kingdom</CountryName>
+		<Contact>
+			<PersonName>enquiry sing</PersonName>
+			<PhoneNumber>11234-325423</PhoneNumber>
+			<PhoneExtension>45232</PhoneExtension>
+			<FaxNumber>11234325423</FaxNumber>
+			<Telex>454586</Telex>
+			<Email>dsa@uk.dhl.com</Email>
+		</Contact>
+	</Shipper>
+	<SpecialService>
+		<SpecialServiceType>WY</SpecialServiceType>
+	</SpecialService>
+	<Place>
+		<ResidenceOrBusiness>B</ResidenceOrBusiness>
+		<CompanyName>ixyz industry</CompanyName>
+		<AddressLine>123..9878</AddressLine>
+		<AddressLine>utnh ytrr</AddressLine>
+		<City>redwood city</City>
+		<CountryCode>GB</CountryCode>
+		<DivisionCode>ca</DivisionCode>
+		<Division>ca</Division>
+		<PostalCode>WC1E 7HU</PostalCode>
+	</Place>	
+	<EProcShip>N</EProcShip>
+  <DocImages>
+    <DocImage>
+      <Type>CIN</Type>
+      <Image>SUkqAAgA</Image>
+      <ImageFormat>PDF</ImageFormat>
+    </DocImage>
+  </DocImages>
+</req:ShipmentRequest>

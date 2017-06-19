@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentValidateErrorResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-err-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2015-11-11T12:28:51+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>CustomerSiteID</SiteID>
+        </ServiceHeader>
+        <Status>
+            <ActionStatus/>
+            <Condition>
+                <ConditionCode>SV011c</ConditionCode>
+                <ConditionData>Cannot determine destination service.
+                    Check  recipient postal code, city and country or
+                    complete an airwaybill manually. For assistance call
+                    DHL customer services.</ConditionData>
+            </Condition>
+        </Status>
+    </Response></res:ShipmentValidateErrorResponse>

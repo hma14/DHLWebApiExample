@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><res:PickupErrorResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com pickup-err-res.xsd'>
+
+<Response><ServiceHeader><MessageTime>2010-01-21T06:59:09-05:00</MessageTime><MessageReference>1234567890123456789012345678901</MessageReference><SiteID>TestSiteID</SiteID></ServiceHeader><Status><ActionStatus>Error</ActionStatus><Condition><ConditionCode>PU012</ConditionCode><ConditionData> Pickup NOT scheduled.  Ready by time is passed the station cutoff time. For pickup assistance call customer service representative.</ConditionData></Condition></Status></Response></res:PickupErrorResponse>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><res:RouteResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com routing-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-09-27T15:04:47+08:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+			<SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>AM</RegionCode>
+    <GMTNegativeIndicator>Y</GMTNegativeIndicator>
+    <GMTOffset>07:00</GMTOffset>
+    <ServiceArea>
+        <ServiceAreaCode>NUQ</ServiceAreaCode>
+        <Description>NUQ|0|GMT-8:00|FREMONT,CA-USA|US</Description>
+    </ServiceArea></res:RouteResponse>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:UnknownTrackingRequest xmlns:req="http://www.dhl.com" 
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+						xsi:schemaLocation="http://www.dhl.com
+						TrackingRequestUnknown.xsd">
+	<Request>
+		<ServiceHeader>
+			<MessageTime>2002-06-25T11:28:56-08:00</MessageTime>
+			<MessageReference>1234567890123456789012345678</MessageReference>
+			<SiteID>TestSiteID</SiteID>
+			<Password>testPwd</Password>
+		</ServiceHeader>
+	</Request>
+	<LanguageCode>en</LanguageCode>
+	<AccountNumber>630276297</AccountNumber>
+	<ShipperReference>
+		<ReferenceID>8100048270</ReferenceID>
+		<ReferenceType>St</ReferenceType>
+	</ShipperReference>
+	<ShipmentDate>
+		<ShipmentDateFrom>2010-07-15</ShipmentDateFrom>
+		<ShipmentDateTo>2010-07-20</ShipmentDateTo>
+	</ShipmentDate>
+</req:UnknownTrackingRequest>

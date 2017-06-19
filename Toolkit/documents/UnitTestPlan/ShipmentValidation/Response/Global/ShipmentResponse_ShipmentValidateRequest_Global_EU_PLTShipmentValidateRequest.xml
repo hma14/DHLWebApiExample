@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2015-11-11T14:35:15+01:00</MessageTime>
+            <MessageReference>111222333444555666777888999</MessageReference>
+            <SiteID>CustomerSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>EU</RegionCode>
+    <Note>
+        <ActionNote>Success</ActionNote>
+    </Note>
+    <AirwayBillNumber>1100000016</AirwayBillNumber>
+    <BillingCode>DSA</BillingCode>
+    <CurrencyCode>GBP</CurrencyCode>
+    <CourierMessage>For testing only. Please do not ship</CourierMessage>
+    <DestinationServiceArea>
+        <ServiceAreaCode>PEK</ServiceAreaCode>
+        <FacilityCode>NOC</FacilityCode>
+        <InboundSortCode>.</InboundSortCode>
+    </DestinationServiceArea>
+    <OriginServiceArea>
+        <ServiceAreaCode>LON</ServiceAreaCode>
+        <FacilityCode>LAM</FacilityCode>
+        <OutboundSortCode>.</OutboundSortCode>
+    </OriginServiceArea>
+    <PackageCharge>248.200</PackageCharge>
+    <Rated>Y</Rated>
+    <ShippingCharge>271.780</ShippingCharge>
+    <WeightUnit>K</WeightUnit>
+    <ChargeableWeight>20</ChargeableWeight>
+    <DimensionalWeight>18497.6</DimensionalWeight>
+    <CountryCode>GB</CountryCode>
+    <Barcodes>
+        <AWBBarCode>iVBORw0KGgoAAAANSUhEUgAAAYwAAABeAQMAAAAKdrGZAAAABlBMVEX///8AAABVwtN+AAAAZ0lEQVR42mNkYGBIyL8wZbPa4QsTzcQCguU1fs385XDlxKn/y+wCvhp9blg5ASR5Krwn4Ou9+UoLGBiYGEgGo1pGtYxqGdUyqmVUy6iWUS2jWka1jGoZ1TKqZVTLqJZRLaNaRrWQCgCcLRm8+/BwawAAAABJRU5ErkJggg==</AWBBarCode>
+        <OriginDestnBarcode>iVBORw0KGgoAAAANSUhEUgAAATUAAABeAQMAAAB4lRFqAAAABlBMVEX///8AAABVwtN+AAAAVklEQVR42mNmYGBImG/xRNX9zownZ2cem8y+lHM3+1+PPsvlu96dnFzeGzvf4uELBgYmBuLAqLpRdaPqRtWNqhtVN6puVN2oulF1o+pG1Y2qG1VHDXUAN0QTi7MMWWIAAAAASUVORK5CYII=</OriginDestnBarcode>
+        <DHLRoutingBarCode>iVBORw0KGgoAAAANSUhEUgAAAcIAAABeAQMAAACKBYaKAAAABlBMVEX///8AAABVwtN+AAAAbElEQVR42u3LvQ1AUABF4UuCSo3ozcIKhni9aJ7GAhok/qaxhtYIomEGneSc6jSfI6kK6yMyW39Zv6iGTPli41LnlLa5Rq87PKvbrIqsVAZJs89n8q6rryGRSCQSiUQikUgkEolEIpFI5N/kA7DyFLz9js8jAAAAAElFTkSuQmCC</DHLRoutingBarCode>
+    </Barcodes>
+    <Piece>1</Piece>
+    <Contents>For testing only. Please do not ship</Contents>
+    <Reference>
+        <ReferenceID>reference</ReferenceID>
+        <ReferenceType>St</ReferenceType>
+    </Reference>
+    <Consignee>
+        <CompanyName>ABM Life Centre</CompanyName>
+        <AddressLine>Central 1</AddressLine>
+        <AddressLine>Changa Business Park</AddressLine>
+        <City>Beijing</City>
+        <Division>cn</Division>
+        <PostalCode>100085</PostalCode>
+        <CountryCode>CN</CountryCode>
+        <CountryName>China</CountryName>
+        <Contact>
+            <PersonName>raobeert bere</PersonName>
+            <PhoneNumber>11234-325423</PhoneNumber>
+            <PhoneExtension>45232</PhoneExtension>
+            <FaxNumber>11234325423</FaxNumber>
+            <Telex>454586</Telex>
+            <Email>plyTo&gt;dsa@gb.dhl.com</Email>
+        </Contact>
+    </Consignee>
+    <Shipper>
+        <ShipperID>130000279</ShipperID>
+        <CompanyName>University of QA</CompanyName>
+        <RegisteredAccount>130009755</RegisteredAccount>
+        <AddressLine>Senate House</AddressLine>
+        <AddressLine>Malet Street</AddressLine>
+        <City>London</City>
+        <Division>wc</Division>
+        <PostalCode>WC1E 7HU</PostalCode>
+        <CountryCode>GB</CountryCode>
+        <CountryName>United Kingdom</CountryName>
+        <Contact>
+            <PersonName>enquiry sing</PersonName>
+            <PhoneNumber>11234-325423</PhoneNumber>
+            <PhoneExtension>45232</PhoneExtension>
+            <FaxNumber>11234325423</FaxNumber>
+            <Telex>454586</Telex>
+            <Email>dsa@uk.dhl.com</Email>
+        </Contact>
+    </Shipper>
+    <CustomerID>131297</CustomerID>
+    <ShipmentDate>2015-11-16</ShipmentDate>
+    <GlobalProductCode>P</GlobalProductCode>
+    <SpecialService>
+        <SpecialServiceType>WY</SpecialServiceType>
+        <SpecialServiceDesc>PAPERLESS TRADE</SpecialServiceDesc>
+    </SpecialService>
+    <Billing>
+        <ShipperAccountNumber>130000279</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <BillingAccountNumber>130000279</BillingAccountNumber>
+        <DutyPaymentType>R</DutyPaymentType>
+    </Billing>
+    <Dutiable>
+        <DeclaredValue>150.00</DeclaredValue>
+        <DeclaredCurrency>GBP</DeclaredCurrency>
+        <ScheduleB>3002905110</ScheduleB>
+        <ExportLicense>D123456</ExportLicense>
+        <ShipperEIN>112233445566</ShipperEIN>
+        <ShipperIDType>S</ShipperIDType>
+        <ImportLicense>ImportLic</ImportLicense>
+        <ConsigneeEIN>ConEIN2123</ConsigneeEIN>
+        <TermsOfTrade>DAP</TermsOfTrade>
+    </Dutiable>
+    <DHLRoutingCode>CN100085+48000001</DHLRoutingCode>
+    <DHLRoutingDataId>2L</DHLRoutingDataId>
+    <ProductContentCode>WPX</ProductContentCode>
+    <ProductShortName>EXPRESS WORLDWIDE</ProductShortName>
+    <InternalServiceCode>C</InternalServiceCode>
+    <InternalServiceCode>PLT</InternalServiceCode>
+    <DeliveryDateCode/>
+    <DeliveryTimeCode/>
+    <Pieces>
+        <Piece>
+            <PieceNumber>1</PieceNumber>
+            <Depth>200</Depth>
+            <Width>2102</Width>
+            <Height>220</Height>
+            <Weight>20</Weight>
+            <PackageType>EE</PackageType>
+            <DimWeight>1200.0</DimWeight>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD010000000000000002</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAYElEQVR42u3LIRJAQBxG8W/NWElR5L2WE5Als8E/bpYUM3sbxyC6BckBNOG99MrPSZrquJ1pnMNulTWXz62pk+vls96VyrDew7EkqdD3MBgMBoPBYDAYDAaDwWAwmD+ZBxTWD7xX4z4wAAAAAElFTkSuQmCC</LicensePlateBarCode>
+        </Piece>
+    </Pieces>
+    <PLTStatus>A</PLTStatus>
+    <QtdSInAdCur>
+        <CurrencyCode>GBP</CurrencyCode>
+        <CurrencyRoleTypeCode>BILLC</CurrencyRoleTypeCode>
+        <PackageCharge>248.200</PackageCharge>
+        <ShippingCharge>271.780</ShippingCharge>
+    </QtdSInAdCur>
+    <QtdSInAdCur>
+        <CurrencyCode>GBP</CurrencyCode>
+        <CurrencyRoleTypeCode>PULCL</CurrencyRoleTypeCode>
+        <PackageCharge>248.200</PackageCharge>
+        <ShippingCharge>271.780</ShippingCharge>
+    </QtdSInAdCur>
+    <QtdSInAdCur>
+        <CurrencyCode>EUR</CurrencyCode>
+        <CurrencyRoleTypeCode>BASEC</CurrencyRoleTypeCode>
+        <PackageCharge>348.880</PackageCharge>
+        <ShippingCharge>382.020</ShippingCharge>
+    </QtdSInAdCur></res:ShipmentResponse>

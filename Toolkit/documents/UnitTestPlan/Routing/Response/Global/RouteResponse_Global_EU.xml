@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><res:RouteResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com routing-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-09-27T15:04:13+08:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+			<SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>EA</RegionCode>
+    <GMTNegativeIndicator>N</GMTNegativeIndicator>
+    <GMTOffset>01:00</GMTOffset>
+    <ServiceArea>
+        <ServiceAreaCode>RED</ServiceAreaCode>
+        <Description>RED|0|GMT0:00|READING - UNITED KINGDOM|GB</Description>
+    </ServiceArea></res:RouteResponse>

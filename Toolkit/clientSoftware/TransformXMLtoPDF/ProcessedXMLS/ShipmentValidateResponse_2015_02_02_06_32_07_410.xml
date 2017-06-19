@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentValidateResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2015-02-02T11:32:06+01:00</MessageTime>
+            <MessageReference>sunsky.shipment.PD15011277661WA</MessageReference>
+            <SiteID>SHENZsunTCN</SiteID>
+        </ServiceHeader>
+    </Response>
+    <Note>
+        <ActionNote>Success</ActionNote>
+        <Condition>
+            <ConditionCode>SV009</ConditionCode>
+            <ConditionData>Dutiable segment Declared Amount WARNING:
+                Your shipment value exceeds limits for destination
+                country and may require pre-approval and added transit time.</ConditionData>
+        </Condition>
+    </Note>
+    <AirwayBillNumber>5376680212</AirwayBillNumber>
+    <BillingCode>DSA</BillingCode>
+    <CurrencyCode>CNY</CurrencyCode>
+    <CourierMessage>Communication tool(8517699000) 1 pcs, Details for Invoice</CourierMessage>
+    <DestinationServiceArea>
+        <ServiceAreaCode>LGW</ServiceAreaCode>
+        <FacilityCode>HML</FacilityCode>
+        <InboundSortCode>.</InboundSortCode>
+    </DestinationServiceArea>
+    <OriginServiceArea>
+        <ServiceAreaCode>SZX</ServiceAreaCode>
+        <OutboundSortCode>.</OutboundSortCode>
+    </OriginServiceArea>
+    <PackageCharge>86.00</PackageCharge>
+    <Rated>Y</Rated>
+    <ShippingCharge>86.00</ShippingCharge>
+    <WeightUnit>K</WeightUnit>
+    <ChargeableWeight>0.5</ChargeableWeight>
+    <DimensionalWeight>0.0</DimensionalWeight>
+    <CountryCode>CN</CountryCode>
+    <Barcodes>
+        <AWBBarCode>iVBORw0KGgoAAAANSUhEUgAAAYwAAABeAQMAAAAKdrGZAAAABlBMVEX///8AAABVwtN+AAAAaUlEQVR42mNkYGBIyL8wZbNmF9v8cwcYfG99nrZYhGGt5IIo4bKAr0afG6NuRH1WO3wqvEzM9d58pQUMDEwMJINRLaNaRrWMahnVMqplVMuollEto1pGtYxqGdUyqmVUy6iWUS2jWkgFAMqUFrynWu3mAAAAAElFTkSuQmCC</AWBBarCode>
+        <OriginDestnBarcode>iVBORw0KGgoAAAANSUhEUgAAATUAAABeAQMAAAB4lRFqAAAABlBMVEX///8AAABVwtN+AAAAVklEQVR42mNkYGBIyL8whVsz6voyu4Cv96ZsnhYQLPLXp/Z7TwCD7i/hqPwLEy8wMDAxEAdG1Y2qG1U3qm5U3ai6UXWj6kbVjaobVTeqblTdqDpqqAMA0VQRvITU/REAAAAASUVORK5CYII=</OriginDestnBarcode>
+        <DHLRoutingBarCode>iVBORw0KGgoAAAANSUhEUgAAAe4AAABeAQMAAADfZGXUAAAABlBMVEX///8AAABVwtN+AAAAeUlEQVR42u3LIRKCQACG0Z8Nksg4zHAVM9zCoqOFrEMxkjdtY/cUdA/gASwSucJCgEMYKN/rL5H0zNoxb4Jb31JaPLqL9br68/Ka8mY+hk90vj6pkoavkpt06KMp7z/bSUZ/odPpdDqdTqfT6XQ6nU6n0+l0On2vvgH+ghi8YDTsGwAAAABJRU5ErkJggg==</DHLRoutingBarCode>
+    </Barcodes>
+    <Piece>1</Piece>
+    <Contents>Communication tool(8517699000) 1 pcs, Details for Invoice</Contents>
+    <Reference>
+        <ReferenceID>PD15011277661WA</ReferenceID>
+    </Reference>
+    <Consignee>
+        <CompanyName>monika luczynska</CompanyName>
+        <AddressLine>88 Bentinck house pumphouse</AddressLine>
+        <AddressLine>crescent</AddressLine>
+        <City>watford</City>
+        <PostalCode>WD17 2AJ</PostalCode>
+        <CountryCode>GB</CountryCode>
+        <CountryName>United Kingdom</CountryName>
+        <Contact>
+            <PersonName>monika luczynska</PersonName>
+            <PhoneNumber>07947735982 07432113207</PhoneNumber>
+        </Contact>
+    </Consignee>
+    <Shipper>
+        <ShipperID>601757264</ShipperID>
+        <CompanyName>iCaseDIY</CompanyName>
+        <AddressLine>3/F, New Factory Building</AddressLine>
+        <AddressLine>Guanghui Tech Park, Minqing Road</AddressLine>
+        <City>Shenzhen</City>
+        <PostalCode>518028</PostalCode>
+        <CountryCode>CN</CountryCode>
+        <CountryName>China</CountryName>
+        <Contact>
+            <PersonName>ICK AI SHANG KUN</PersonName>
+            <PhoneNumber>+86-755-83033895</PhoneNumber>
+        </Contact>
+    </Shipper>
+    <CustomerID>131297</CustomerID>
+    <ShipmentDate>2015-03-15</ShipmentDate>
+    <GlobalProductCode>P</GlobalProductCode>
+    <Billing>
+        <ShipperAccountNumber>601757264</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <DutyPaymentType>R</DutyPaymentType>
+    </Billing>
+    <Dutiable>
+        <DeclaredValue>55.79</DeclaredValue>
+        <DeclaredCurrency>USD</DeclaredCurrency>
+    </Dutiable>
+    <DHLRoutingCode>GBWD172AJ+48000001</DHLRoutingCode>
+    <DHLRoutingDataId>2L</DHLRoutingDataId>
+    <ProductContentCode>WPX</ProductContentCode>
+    <ProductShortName>EXPRESS WORLDWIDE</ProductShortName>
+    <InternalServiceCode>C</InternalServiceCode>
+    <DeliveryDateCode/>
+    <DeliveryTimeCode/>
+    <Pieces>
+        <Piece>
+            <PieceNumber>1</PieceNumber>
+            <DimWeight>0.0</DimWeight>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD014600001530629679</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAZ0lEQVR42u3LIRJAQACG0X8FkqLIDuI+NkvGGJJZkSIZ0S3MSO6gEB1BdAZN+F5/RlIRltPl8jrZm6CJbn9+uvGQybTeio9la02fZJXtbWrPwUmevuNwOBwOh8PhcDgcDofD4XD+dF72VBW8temNoAAAAABJRU5ErkJggg==</LicensePlateBarCode>
+        </Piece>
+    </Pieces></res:ShipmentValidateResponse>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentValidateResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-06-18T09:29:06+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>PLTtestacct</SiteID>
+        </ServiceHeader>
+    </Response>
+    <Note>
+        <ActionNote>Success</ActionNote>
+        <Condition>
+            <ConditionCode>SV008</ConditionCode>
+            <ConditionData>  Warning Note! Dimensions or weights may
+                require special handling or add to transit time. Please
+                contact your customer service representative.</ConditionData>
+        </Condition>
+    </Note>
+    <AirwayBillNumber>2138337180</AirwayBillNumber>
+    <BillingCode>DSA</BillingCode>
+    <CurrencyCode>USD</CurrencyCode>
+    <CourierMessage>FOR TESTING PURPOSE ONLY. PLEASE DO NOT SHIP.
+        123456789012345678901234567890123456789 STOP</CourierMessage>
+    <DestinationServiceArea>
+        <ServiceAreaCode>BHZ</ServiceAreaCode>
+        <FacilityCode/>
+        <InboundSortCode>.</InboundSortCode>
+    </DestinationServiceArea>
+    <OriginServiceArea>
+        <ServiceAreaCode>BUE</ServiceAreaCode>
+        <OutboundSortCode>.</OutboundSortCode>
+    </OriginServiceArea>
+    <Rated>N</Rated>
+    <InsuredAmount>1000.00</InsuredAmount>
+    <WeightUnit>L</WeightUnit>
+    <ChargeableWeight>30.0</ChargeableWeight>
+    <DimensionalWeight>113913.0</DimensionalWeight>
+    <ReadyByTime>17:00</ReadyByTime>
+    <CallInTime>16:30</CallInTime>
+    <DaysAdvanceNotice>0</DaysAdvanceNotice>
+    <CountryCode>AR</CountryCode>
+    <Barcodes>
+        <AWBBarCode>iVBORw0KGgoAAAANSUhEUgAAAYwAAABeAQMAAAAKdrGZAAAABlBMVEX///8AAABVwtN+AAAAaElEQVR42mNkYGBIyL8whfvc4QsTzcRqv5cxpvre8rab2xD19g3D13vz7VxvRH1We7vgVcpTIE9pAQMDEwPJYFTLqJZRLaNaRrWMahnVMqplVMuollEto1pGtYxqGdUyqmVUy6gWUgEAjP0ZvG1TjkkAAAAASUVORK5CYII=</AWBBarCode>
+        <OriginDestnBarcode>iVBORw0KGgoAAAANSUhEUgAAATUAAABeAQMAAAB4lRFqAAAABlBMVEX///8AAABVwtN+AAAAU0lEQVR42mNkYGBIyL8whVsp/0J6gljtMiDhem++xsquVylPGZi37AaKT7zAwMDEQBwYVTeqblTdqLpRdaPqRtWNqhtVN6puVN2oulF1o+qooQ4AKQIQvLZu6GMAAAAASUVORK5CYII=</OriginDestnBarcode>
+        <ClientIDBarCode>iVBORw0KGgoAAAANSUhEUgAAARgAAAAkAQMAAABoj7etAAAABlBMVEX///8AAABVwtN+AAAAPElEQVR42mNkYGBIyL8wZcutGwyvUp4yBMtriM295XDlxCm29MRU31ufpRgYmBgIg1E1o2pG1YyqGepqAKFJD0hDGoJfAAAAAElFTkSuQmCC</ClientIDBarCode>
+        <DHLRoutingBarCode>iVBORw0KGgoAAAANSUhEUgAAAcIAAABeAQMAAACKBYaKAAAABlBMVEX///8AAABVwtN+AAAAcUlEQVR42u3LsQ1EYACG4c8ldGpR3RpGMIMBOI1GddHQ6TWiEBbRWuOPBhsQjR10kvfpH0vS3y2Ml43tWc3taLZpPayvqfOfplCd3Rg7DZZ4kFcqkqMr6Xe/lD56islkMplMJpPJZDKZTCaTyWQy3zZvn1QYvAdxqH4AAAAASUVORK5CYII=</DHLRoutingBarCode>
+    </Barcodes>
+    <Piece>2</Piece>
+    <Contents>FOR TESTING PURPOSE ONLY. PLEASE DO NOT SHIP.
+        123456789012345678901234567890123456789 STOP</Contents>
+    <Reference>
+        <ReferenceID>SHIPMENT REFERENCE US-UK 1234567890</ReferenceID>
+        <ReferenceType>St</ReferenceType>
+    </Reference>
+    <Consignee>
+        <CompanyName>Receiver Company BR Private Limited</CompanyName>
+        <AddressLine>Plot No 4 address 1</AddressLine>
+        <City>BELEM</City>
+        <PostalCode>35200</PostalCode>
+        <CountryCode>BR</CountryCode>
+        <CountryName>Brazil</CountryName>
+        <FederalTaxId>R_FederalTaxID_12345</FederalTaxId>
+        <StateTaxId>R_StateTaxID_1234567</StateTaxId>
+        <Contact>
+            <PersonName>Mr Robinson Peter Harrison 12345678</PersonName>
+            <PhoneNumber>12345577889</PhoneNumber>
+            <PhoneExtension>123</PhoneExtension>
+            <FaxNumber>123</FaxNumber>
+            <Telex>String</Telex>
+            <Email>
+                <From>test@email.com</From>
+                <To>test@email.com</To>
+                <cc>test@email.com</cc>
+                <Subject>Email subject</Subject>
+                <ReplyTo>test@email.com</ReplyTo>
+                <Body>email body</Body>
+            </Email>
+        </Contact>
+    </Consignee>
+    <Shipper>
+        <ShipperID>730144588</ShipperID>
+        <CompanyName>IBM Corporation</CompanyName>
+        <RegisteredAccount>730144588</RegisteredAccount>
+        <AddressLine>1 New Orchard Road</AddressLine>
+        <AddressLine>Armonk</AddressLine>
+        <City>CAPITAL FEDERAL</City>
+        <Division>AR</Division>
+        <DivisionCode>AR</DivisionCode>
+        <PostalCode>10504</PostalCode>
+        <CountryCode>AR</CountryCode>
+        <CountryName>ARGENTINA</CountryName>
+        <Contact>
+            <PersonName>Ms Smart Robinson Harrison 12345678</PersonName>
+            <PhoneNumber>112233</PhoneNumber>
+            <PhoneExtension>1122</PhoneExtension>
+            <FaxNumber>1234</FaxNumber>
+            <Telex>1222</Telex>
+            <Email>
+                <From>test@email.com</From>
+                <To>test@email.com</To>
+                <cc>test@email.com</cc>
+                <Subject>Email subject</Subject>
+                <ReplyTo>test@email.com</ReplyTo>
+                <Body>email body</Body>
+            </Email>
+        </Contact>
+    </Shipper>
+    <CustomerID>300902</CustomerID>
+    <ShipmentDate>2013-06-20</ShipmentDate>
+    <GlobalProductCode>D</GlobalProductCode>
+    <Billing>
+        <ShipperAccountNumber>730144588</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <BillingAccountNumber>730144588</BillingAccountNumber>
+        <DutyPaymentType>S</DutyPaymentType>
+        <DutyAccountNumber>730144588</DutyAccountNumber>
+    </Billing>
+    <Dutiable>
+        <DeclaredValue>2000.00</DeclaredValue>
+        <DeclaredCurrency>USD</DeclaredCurrency>
+        <ScheduleB>3002905110</ScheduleB>
+        <ExportLicense>D123456</ExportLicense>
+        <ShipperEIN>1111111111</ShipperEIN>
+        <ShipperIDType>S</ShipperIDType>
+        <ImportLicense>Text</ImportLicense>
+        <ConsigneeEIN>Text</ConsigneeEIN>
+        <ConsigneeIDType>S</ConsigneeIDType>
+        <TermsOfTrade>DDU</TermsOfTrade>
+    </Dutiable>
+    <ExportDeclaration>
+        <InterConsignee>String</InterConsignee>
+        <IsPartiesRelation>N</IsPartiesRelation>
+        <ECCN>EAR99</ECCN>
+        <SignatureName>String</SignatureName>
+        <SignatureTitle>String</SignatureTitle>
+        <ExportReason>S</ExportReason>
+        <ExportReasonCode>P</ExportReasonCode>
+        <SedNumber>FTSR</SedNumber>
+        <SedNumberType>F</SedNumberType>
+        <MxStateCode>St</MxStateCode>
+        <ExportLineItem>
+            <LineNumber>200</LineNumber>
+            <Quantity>32</Quantity>
+            <QuantityUnit>String</QuantityUnit>
+            <Description>String</Description>
+            <Value>200.00</Value>
+            <IsDomestic>Y</IsDomestic>
+            <ScheduleB>3002905110</ScheduleB>
+            <ECCN>EAR99</ECCN>
+            <Weight>
+                <Weight>100.0</Weight>
+                <WeightUnit>L</WeightUnit>
+            </Weight>
+            <License>
+                <LicenseNumber>D123456</LicenseNumber>
+                <ExpiryDate>2011-09-29</ExpiryDate>
+            </License>
+            <LicenseSymbol>String</LicenseSymbol>
+        </ExportLineItem>
+    </ExportDeclaration>
+    <NewShipper>Y</NewShipper>
+    <DHLRoutingCode>BR35200+42000000</DHLRoutingCode>
+    <DHLRoutingDataId>2L</DHLRoutingDataId>
+    <ProductContentCode>DOX</ProductContentCode>
+    <ProductShortName>EXPRESS WORLDWIDE</ProductShortName>
+    <InternalServiceCode/>
+    <DeliveryDateCode/>
+    <DeliveryTimeCode/>
+    <Pieces>
+        <Piece>
+            <PieceNumber>1</PieceNumber>
+            <Depth>300.00</Depth>
+            <Width>100.00</Width>
+            <Height>200.00</Height>
+            <Weight>10.00</Weight>
+            <PackageType>EE</PackageType>
+            <DimWeight>43478.3</DimWeight>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD014436538150091012</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAaUlEQVR42u3LIRJAQBiA0X8FFEWimHEQ2R6FLCFYTVEkxTiGIzgG0RVs4Qya8L3+lIjUQbucQ9Wlu/FMeLlrP9vcxEbG27fJ0+joUllfRHorj2kQceQ7DofD4XA4HA6Hw+FwOBwO50/nBfbWFbx3C/MtAAAAAElFTkSuQmCC</LicensePlateBarCode>
+        </Piece>
+        <Piece>
+            <PieceNumber>2</PieceNumber>
+            <Depth>300.00</Depth>
+            <Width>120.00</Width>
+            <Height>270.00</Height>
+            <Weight>20.00</Weight>
+            <PackageType>EE</PackageType>
+            <DimWeight>70434.8</DimWeight>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD014436538150091013</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAZklEQVR42u3LIRJAUBRA0UdAURRfMaPYCvuREDxNUSTFWI5lEL8lUFiDJtzTjyMiddgux1B12aa+RtZb+/kuNFEZr+BOn6Y01smNjVXOfRpEXPmOw+FwOBwOh8PhcDgcDofD+dN5AfX1FbzLWMBPAAAAAElFTkSuQmCC</LicensePlateBarCode>
+        </Piece>
+    </Pieces></res:ShipmentValidateResponse>
+

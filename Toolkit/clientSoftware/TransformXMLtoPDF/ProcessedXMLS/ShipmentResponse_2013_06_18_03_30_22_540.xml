@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-06-18T09:30:19+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>PLTtestacct</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>AM</RegionCode>
+    <Note>
+        <ActionNote>Success</ActionNote>
+        <Condition>
+            <ConditionCode>SV008</ConditionCode>
+            <ConditionData>  Warning Note! Dimensions or weights may
+                require special handling or add to transit time. Please
+                contact your customer service representative.</ConditionData>
+        </Condition>
+    </Note>
+    <AirwayBillNumber>2138337191</AirwayBillNumber>
+    <BillingCode>DSA</BillingCode>
+    <CurrencyCode>ARS</CurrencyCode>
+    <CourierMessage>Global AM Int PLT shpmt</CourierMessage>
+    <DestinationServiceArea>
+        <ServiceAreaCode>BRU</ServiceAreaCode>
+        <FacilityCode>AND</FacilityCode>
+        <InboundSortCode>.</InboundSortCode>
+    </DestinationServiceArea>
+    <OriginServiceArea>
+        <ServiceAreaCode>BUE</ServiceAreaCode>
+        <OutboundSortCode>.</OutboundSortCode>
+    </OriginServiceArea>
+    <PackageCharge>1455371.03</PackageCharge>
+    <Rated>Y</Rated>
+    <ShippingCharge>1666399.81</ShippingCharge>
+    <InsuredAmount>1000.00</InsuredAmount>
+    <WeightUnit>L</WeightUnit>
+    <ChargeableWeight>19.78</ChargeableWeight>
+    <DimensionalWeight>43478.3</DimensionalWeight>
+    <ReadyByTime>17:00</ReadyByTime>
+    <CallInTime>16:30</CallInTime>
+    <DaysAdvanceNotice>0</DaysAdvanceNotice>
+    <CountryCode>AR</CountryCode>
+    <Barcodes>
+        <AWBBarCode>iVBORw0KGgoAAAANSUhEUgAAAYwAAABeAQMAAAAKdrGZAAAABlBMVEX///8AAABVwtN+AAAAaElEQVR42mNkYGBIyL8whfvc4QsTzcRqv5cxpvre8rab2xD19g3D13vz7VxvRHmfe7sMKOl6b77SAgYGJgaSwaiWUS2jWka1jGoZ1TKqZVTLqJZRLaNaRrWMahnVMqplVMuollEtpAIAbAwXvJPxHGIAAAAASUVORK5CYII=</AWBBarCode>
+        <OriginDestnBarcode>iVBORw0KGgoAAAANSUhEUgAAATUAAABeAQMAAAB4lRFqAAAABlBMVEX///8AAABVwtN+AAAAVElEQVR42mNkYGBIyL8whVsp/0J6gljtMiDhem++htjc62WMqbq/hKPyL0y8wMDAxEAcGFU3qm5U3ai6UXWj6kbVjaobVTeqblTdqLpRdaPqqKEOAJH3D7y88nifAAAAAElFTkSuQmCC</OriginDestnBarcode>
+        <ClientIDBarCode>iVBORw0KGgoAAAANSUhEUgAAARgAAAAkAQMAAABoj7etAAAABlBMVEX///8AAABVwtN+AAAAPUlEQVR42mNmYGBImG/x5OzMkxbv3x6bzP7pLOftyU+Oxxv5PD8Xufl5bi8DAxMDYTCqZlTNqJpRNUNdDQA0ThJoWpk+SwAAAABJRU5ErkJggg==</ClientIDBarCode>
+        <DHLRoutingBarCode>iVBORw0KGgoAAAANSUhEUgAAAawAAABeAQMAAABFK7JJAAAABlBMVEX///8AAABVwtN+AAAAaUlEQVR42u3LoRVAUACG0Z/gKLKjOK+YhRlMIOko7xUDSBqSUQyhaFYgsYMkfLdfT1ITdUdcL+PtNpuEqYrJJjZ3g06XXZ7Rs1cKZil2TV+ubW4kX5/QaDQajUaj0Wg0Go1Go9FotH+3F1GxE7xDV+SvAAAAAElFTkSuQmCC</DHLRoutingBarCode>
+    </Barcodes>
+    <Piece>2</Piece>
+    <Contents>Global AM Int PLT shpmt</Contents>
+    <Reference>
+        <ReferenceID>Global AM Int PLT shpmt</ReferenceID>
+        <ReferenceType>St</ReferenceType>
+    </Reference>
+    <Consignee>
+        <CompanyName>IBM Bruse Pte Ltd</CompanyName>
+        <AddressLine>9 Business Park Central 1</AddressLine>
+        <AddressLine>3th Floor</AddressLine>
+        <AddressLine>The IBM Place</AddressLine>
+        <City>Brussels</City>
+        <PostalCode>1060</PostalCode>
+        <CountryCode>BE</CountryCode>
+        <CountryName>Belgium</CountryName>
+        <Contact>
+            <PersonName>Mrs Orlander</PersonName>
+            <PhoneNumber>506-851-2271</PhoneNumber>
+            <PhoneExtension>7862</PhoneExtension>
+            <FaxNumber>506-851-7403</FaxNumber>
+            <Telex>506-851-7121</Telex>
+        </Contact>
+    </Consignee>
+    <Shipper>
+        <ShipperID>730144588</ShipperID>
+        <CompanyName>AR Shipment PDF Label</CompanyName>
+        <RegisteredAccount>730144588</RegisteredAccount>
+        <AddressLine>1210 S Pine Island Road</AddressLine>
+        <City>CAPITAL FEDERAL</City>
+        <Division>AR</Division>
+        <DivisionCode>AR</DivisionCode>
+        <PostalCode>1054</PostalCode>
+        <CountryCode>AR</CountryCode>
+        <CountryName>ARGENTINA</CountryName>
+        <Contact>
+            <PersonName>Mr peter</PersonName>
+            <PhoneNumber>1 905 8613402</PhoneNumber>
+            <PhoneExtension>3403</PhoneExtension>
+            <FaxNumber>1 905 8613411</FaxNumber>
+            <Telex>1245</Telex>
+        </Contact>
+    </Shipper>
+    <CustomerID>131297</CustomerID>
+    <ShipmentDate> </ShipmentDate>
+    <GlobalProductCode>P</GlobalProductCode>
+    <Billing>
+        <ShipperAccountNumber>730144588</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <BillingAccountNumber>730144588</BillingAccountNumber>
+        <DutyPaymentType>S</DutyPaymentType>
+        <DutyAccountNumber>730144588</DutyAccountNumber>
+    </Billing>
+    <Dutiable>
+        <DeclaredValue>1200.00</DeclaredValue>
+        <DeclaredCurrency>USD</DeclaredCurrency>
+        <ScheduleB>3002905110</ScheduleB>
+        <ExportLicense>D123456</ExportLicense>
+        <ShipperEIN>112233445566</ShipperEIN>
+        <ShipperIDType>S</ShipperIDType>
+        <ImportLicense>ImportLic</ImportLicense>
+        <ConsigneeEIN>ConEIN2123</ConsigneeEIN>
+        <TermsOfTrade>DTP</TermsOfTrade>
+    </Dutiable>
+    <NewShipper>Y</NewShipper>
+    <DHLRoutingCode>BE1060+48000001</DHLRoutingCode>
+    <DHLRoutingDataId>2L</DHLRoutingDataId>
+    <ProductContentCode>WPX</ProductContentCode>
+    <ProductShortName>EXPRESS WORLDWIDE</ProductShortName>
+    <InternalServiceCode>C</InternalServiceCode>
+    <DeliveryDateCode/>
+    <DeliveryTimeCode/>
+    <Pieces>
+        <Piece>
+            <PieceNumber>1</PieceNumber>
+            <Depth>300.00</Depth>
+            <Width>100.00</Width>
+            <Height>200.00</Height>
+            <Weight>19.78</Weight>
+            <PackageType>EE</PackageType>
+            <DimWeight>43478.3</DimWeight>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD014436538150091014</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAaUlEQVR42u3LoRVAUBiA0f8JKIpEcY5iBhuwBTtICJ6mKJLisI0xiIxAYQZN+G6/SkRKp572rmjCVVvaPcy5He9E+1r6y76Dp0q9Q0WSxflybkMnYsh3HA6Hw+FwOBwOh8PhcDgczp/OC/QcFbyOsdqBAAAAAElFTkSuQmCC</LicensePlateBarCode>
+        </Piece>
+    </Pieces></res:ShipmentResponse>
+

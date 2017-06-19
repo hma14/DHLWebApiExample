@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><res:PickupErrorResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com pickup-err-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-10-11T09:36:40+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+        <Status>
+            <ActionStatus>Error</ActionStatus>
+            <Condition>
+                <ConditionCode>151</ConditionCode>
+                <ConditionData>Requestor segment Account Number
+                    Mandatory Required error</ConditionData>
+            </Condition>
+        </Status>
+    </Response></res:PickupErrorResponse>
+

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:TrackingResponse xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com TrackingResponse.xsd">
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-10-06T17:35:58+08:00</MessageTime>
+            <MessageReference>1234567890123456789012345678</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <AWBInfo>
+        <AWBNumber>6372653501</AWBNumber>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <ShipmentInfo>
+            <OriginServiceArea/>
+            <DestinationServiceArea/>
+            <ShipperName/>
+            <ConsigneeName/>
+            <ShipmentDate/>
+            <DlvyNotificationFlag>Y</DlvyNotificationFlag>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>11:30:00</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>快件到达中转中心 PRISTINA - KOSOVO</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>11:34:00</Time>
+                <ServiceEvent>
+                    <EventCode>IC</EventCode>
+                    <Description>快件正在等待清关 PRISTINA - KOSOVO</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>17:18:00</Time>
+                <ServiceEvent>
+                    <EventCode>BN</EventCode>
+                    <Description>已通知收件人的代理，货件正在清关</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>17:28:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>清关流程</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>这票快件除了标准的海关申报还需要特殊的报关操作。</FurtherDetails>
+                    <NextSteps>该监管机构授权后即可进行下一步的清关流程。如需更多详细资料，DHL的服务代表会尝试联系进口商或发件人。</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-29</Date>
+                <Time>18:19:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>清关流程</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>这票快件除了标准的海关申报还需要特殊的报关操作。</FurtherDetails>
+                    <NextSteps>该监管机构授权后即可进行下一步的清关流程。如需更多详细资料，DHL的服务代表会尝试联系进口商或发件人。</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-30</Date>
+                <Time>17:40:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>清关流程</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>这票快件除了标准的海关申报还需要特殊的报关操作。</FurtherDetails>
+                    <NextSteps>该监管机构授权后即可进行下一步的清关流程。如需更多详细资料，DHL的服务代表会尝试联系进口商或发件人。</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-09-02</Date>
+                <Time>13:41:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>清关流程</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>这票快件除了标准的海关申报还需要特殊的报关操作。</FurtherDetails>
+                    <NextSteps>该监管机构授权后即可进行下一步的清关流程。如需更多详细资料，DHL的服务代表会尝试联系进口商或发件人。</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-09-03</Date>
+                <Time>17:28:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>清关流程</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>这票快件除了标准的海关申报还需要特殊的报关操作。</FurtherDetails>
+                    <NextSteps>该监管机构授权后即可进行下一步的清关流程。如需更多详细资料，DHL的服务代表会尝试联系进口商或发件人。</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-09-04</Date>
+                <Time>17:52:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>清关流程</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>这票快件除了标准的海关申报还需要特殊的报关操作。</FurtherDetails>
+                    <NextSteps>该监管机构授权后即可进行下一步的清关流程。如需更多详细资料，DHL的服务代表会尝试联系进口商或发件人。</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-09-05</Date>
+                <Time>08:15:00</Time>
+                <ServiceEvent>
+                    <EventCode>BR</EventCode>
+                    <Description>快件已经转交收件人指定的清关代理清关并由其负责派送。DHL将不再提供收件人签收结果</Description>
+                </ServiceEvent>
+                <Signatory>00</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+        </ShipmentInfo>
+    </AWBInfo>
+    <AWBInfo>
+        <AWBNumber>6372653501</AWBNumber>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <ShipmentInfo>
+            <OriginServiceArea>
+                <ServiceAreaCode>BFE</ServiceAreaCode>
+                <Description>BIELEFELD - GERMANY</Description>
+            </OriginServiceArea>
+            <DestinationServiceArea>
+                <ServiceAreaCode>FRA</ServiceAreaCode>
+                <Description>FRANKFURT - GERMANY</Description>
+            </DestinationServiceArea>
+            <ShipperName>ARVATO DISTRIBUTION GMBHBETRIEBSSTA</ShipperName>
+            <ShipperAccountNumber>145590899</ShipperAccountNumber>
+            <ConsigneeName>JAN WENKLER</ConsigneeName>
+            <ShipmentDate>2013-08-27T00:00:00</ShipmentDate>
+            <Pieces>1</Pieces>
+            <Weight>0.12</Weight>
+            <WeightUnit>K</WeightUnit>
+            <GlobalProductCode>T</GlobalProductCode>
+            <DlvyNotificationFlag>N</DlvyNotificationFlag>
+            <Shipper>
+                <City>Herzebrock-Clarholz</City>
+                <PostalCode>33442</PostalCode>
+                <CountryCode>DE</CountryCode>
+            </Shipper>
+            <Consignee>
+                <City>Bad Camberg Wurges</City>
+                <PostalCode>65520</PostalCode>
+                <CountryCode>DE</CountryCode>
+            </Consignee>
+            <ShipperReference>
+                <ReferenceID>0213489336</ReferenceID>
+            </ShipperReference>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>17:10:00</Time>
+                <ServiceEvent>
+                    <EventCode>PU</EventCode>
+                    <Description>快件已从发件人处提取</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BFE</ServiceAreaCode>
+                    <Description>BIELEFELD - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-26</Date>
+                <Time>20:40:48</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>正在（已经）安排下一站的转运 STUTTGART - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STR</ServiceAreaCode>
+                    <Description>STUTTGART - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-26</Date>
+                <Time>22:29:18</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>离开转运地 STUTTGART - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STR</ServiceAreaCode>
+                    <Description>STUTTGART - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-26</Date>
+                <Time>23:41:22</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>快件到达中转中心 LEIPZIG - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEJ</ServiceAreaCode>
+                    <Description>LEIPZIG - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>00:05:57</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>正在（已经）安排下一站的转运 LEIPZIG - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEJ</ServiceAreaCode>
+                    <Description>LEIPZIG - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>04:19:46</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>离开转运地 LEIPZIG - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEJ</ServiceAreaCode>
+                    <Description>LEIPZIG - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>06:06:25</Time>
+                <ServiceEvent>
+                    <EventCode>TR</EventCode>
+                    <Description>快件正在转运途中 BRATISLAVA - SLOVAKIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BTS</ServiceAreaCode>
+                    <Description>BRATISLAVA - SLOVAKIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>06:07:45</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>离开转运地 BRATISLAVA - SLOVAKIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BTS</ServiceAreaCode>
+                    <Description>BRATISLAVA - SLOVAKIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>08:27:35</Time>
+                <ServiceEvent>
+                    <EventCode>TR</EventCode>
+                    <Description>快件正在转运途中 SOFIA - BULGARIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SOF</ServiceAreaCode>
+                    <Description>SOFIA - BULGARIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>08:33:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>离开转运地 SOFIA - BULGARIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SOF</ServiceAreaCode>
+                    <Description>SOFIA - BULGARIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>09:42:29</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>快件到达中转中心 SKOPJE - MACEDONIA, REPUBLIC OF</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SKP</ServiceAreaCode>
+                    <Description>SKOPJE - MACEDONIA, REPUBLIC OF</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>12:22:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>离开转运地 SKOPJE - MACEDONIA, REPUBLIC OF</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SKP</ServiceAreaCode>
+                    <Description>SKOPJE - MACEDONIA, REPUBLIC OF</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>20:17:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>离开转运地 BIELEFELD - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BFE</ServiceAreaCode>
+                    <Description>BIELEFELD - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>05:41:00</Time>
+                <ServiceEvent>
+                    <EventCode>AR</EventCode>
+                    <Description>快件已经到达派送作业地点 FRANKFURT - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>FRA</ServiceAreaCode>
+                    <Description>FRANKFURT - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>07:32:00</Time>
+                <ServiceEvent>
+                    <EventCode>WC</EventCode>
+                    <Description>快件正在派送中</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>FRA</ServiceAreaCode>
+                    <Description>FRANKFURT - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>10:03:00</Time>
+                <ServiceEvent>
+                    <EventCode>OK</EventCode>
+                    <Description>已派送并签收</Description>
+                </ServiceEvent>
+                <Signatory>WENKLER</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>FRA</ServiceAreaCode>
+                    <Description>FRANKFURT - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+        </ShipmentInfo>
+    </AWBInfo>
+    <LanguageCode>zh</LanguageCode>
+</req:TrackingResponse>
+

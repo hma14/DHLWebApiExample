@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ModifyPUResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com pickup-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-07-22T15:00:41+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+	<RegionCode>AM</RegionCode>
+    <Note>
+        <ActionNote>Success</ActionNote>
+    </Note>
+    <ConfirmationNumber>100629</ConfirmationNumber>
+    <NextPickupDate>2013-07-22</NextPickupDate>
+    <CurrencyCode>USD</CurrencyCode>
+    <OriginSvcArea>JCC</OriginSvcArea></res:ModifyPUResponse>
+

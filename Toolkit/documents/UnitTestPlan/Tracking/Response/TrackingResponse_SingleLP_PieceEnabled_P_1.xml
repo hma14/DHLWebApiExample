@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:TrackingResponse xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com TrackingResponse.xsd">
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2011-08-16T10:51:56+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <AWBInfo>
+        <AWBNumber>9422367220</AWBNumber>
+        <TrackedBy>
+            <LPNumber>JD011936367670025816</LPNumber>
+        </TrackedBy>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <Pieces>
+            <PieceInfo>
+                <PieceDetails>
+                    <AWBNumber>9422367220</AWBNumber>
+                    <LicensePlate>JD011936367670025816</LicensePlate>
+                    <PieceNumber>1</PieceNumber>
+                    <ActualDepth>80.0</ActualDepth>
+                    <ActualWidth>52.0</ActualWidth>
+                    <ActualHeight>60.0</ActualHeight>
+                    <ActualWeight>19.6</ActualWeight>
+                    <Depth>0.0</Depth>
+                    <Width>0.0</Width>
+                    <Height>0.0</Height>
+                    <Weight>20.0</Weight>
+                    <DimWeight>49.9</DimWeight>
+                    <WeightUnit>K</WeightUnit>
+                </PieceDetails>
+            </PieceInfo>
+        </Pieces>
+    </AWBInfo>
+</req:TrackingResponse>
+
+

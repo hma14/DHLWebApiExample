@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:TrackingResponse xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com TrackingResponse.xsd">
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2011-08-16T10:56:13+01:00</MessageTime>
+            <MessageReference>1234567890123456789012345678</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <AWBInfo>
+        <AWBNumber>3846066022</AWBNumber>
+        <TrackedBy>
+            <LPNumber>JD011645064880000355</LPNumber>
+        </TrackedBy>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <ShipmentInfo>
+            <OriginServiceArea>
+                <ServiceAreaCode>HYD</ServiceAreaCode>
+                <Description>HYDERABAD - INDIA</Description>
+            </OriginServiceArea>
+            <DestinationServiceArea>
+                <ServiceAreaCode>STL</ServiceAreaCode>
+                <Description>BRIDGETON,MO-USA</Description>
+            </DestinationServiceArea>
+            <ShipperName>B SANDEEP</ShipperName>
+            <ShipperAccountNumber>CASHUECPR</ShipperAccountNumber>
+            <ConsigneeName>SOUTHERN ILLIONOIS UNIVERSITY CARBO</ConsigneeName>
+            <ShipmentDate>2011-03-31T18:47:00</ShipmentDate>
+            <Pieces>1</Pieces>
+            <Weight>0.5</Weight>
+            <WeightUnit>K</WeightUnit>
+            <GlobalProductCode>7</GlobalProductCode>
+            <ShipmentDesc>UE DOCS</ShipmentDesc>
+            <DlvyNotificationFlag>N</DlvyNotificationFlag>
+            <Shipper>
+                <City>HYDERABAD</City>
+                <PostalCode>500036</PostalCode>
+                <CountryCode>IN</CountryCode>
+            </Shipper>
+            <Consignee>
+                <City>BRIDGETON IL USA</City>
+                <DivisionCode>IL</DivisionCode>
+                <PostalCode>62901</PostalCode>
+                <CountryCode>US</CountryCode>
+            </Consignee>
+            <ShipmentEvent>
+                <Date>2011-03-31</Date>
+                <Time>18:47:00</Time>
+                <ServiceEvent>
+                    <EventCode>PU</EventCode>
+                    <Description>Shipment picked up</Description>
+                </ServiceEvent>
+                <Signatory>CASHUECPR</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>HYD</ServiceAreaCode>
+                    <Description>HYDERABAD - INDIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-03</Date>
+                <Time>13:26:00</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at Location CINCINNATI HUB,OH-USA</Description>
+                </ServiceEvent>
+                <Signatory>STL</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>CVG</ServiceAreaCode>
+                    <Description>CINCINNATI HUB,OH-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-03</Date>
+                <Time>13:38:00</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at DHL facility in CINCINNATI HUB,OH-USA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CVG</ServiceAreaCode>
+                    <Description>CINCINNATI HUB,OH-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-03</Date>
+                <Time>13:38:00</Time>
+                <ServiceEvent>
+                    <EventCode>CR</EventCode>
+                    <Description>Clearance processing complete at
+                        CINCINNATI HUB,OH-USA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CVG</ServiceAreaCode>
+                    <Description>CINCINNATI HUB,OH-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-03</Date>
+                <Time>17:24:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed from DHL facility in
+                        CINCINNATI HUB,OH-USA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CVG</ServiceAreaCode>
+                    <Description>CINCINNATI HUB,OH-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-04</Date>
+                <Time>06:10:00</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at DHL facility in BRIDGETON,MO-USA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-04</Date>
+                <Time>06:53:00</Time>
+                <ServiceEvent>
+                    <EventCode>AR</EventCode>
+                    <Description>Arrived at DHL facility in BRIDGETON,MO-USA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-04</Date>
+                <Time>08:15:00</Time>
+                <ServiceEvent>
+                    <EventCode>WC</EventCode>
+                    <Description>With delivery courier</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-04</Date>
+                <Time>13:15:00</Time>
+                <ServiceEvent>
+                    <EventCode>BA</EventCode>
+                    <Description>Address Information needed; contact DHL</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-05</Date>
+                <Time>12:36:00</Time>
+                <ServiceEvent>
+                    <EventCode>OH</EventCode>
+                    <Description>Shipment on hold</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-06</Date>
+                <Time>11:08:00</Time>
+                <ServiceEvent>
+                    <EventCode>OH</EventCode>
+                    <Description>Shipment on hold</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-07</Date>
+                <Time>10:57:00</Time>
+                <ServiceEvent>
+                    <EventCode>OH</EventCode>
+                    <Description>Shipment on hold</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-08</Date>
+                <Time>11:05:00</Time>
+                <ServiceEvent>
+                    <EventCode>OH</EventCode>
+                    <Description>Shipment on hold</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-11</Date>
+                <Time>10:49:00</Time>
+                <ServiceEvent>
+                    <EventCode>OH</EventCode>
+                    <Description>Shipment on hold</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-12</Date>
+                <Time>13:48:00</Time>
+                <ServiceEvent>
+                    <EventCode>OH</EventCode>
+                    <Description>Shipment on hold</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-13</Date>
+                <Time>08:43:00</Time>
+                <ServiceEvent>
+                    <EventCode>WC</EventCode>
+                    <Description>With delivery courier</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2011-04-13</Date>
+                <Time>14:24:00</Time>
+                <ServiceEvent>
+                    <EventCode>OK</EventCode>
+                    <Description>Shipment delivered</Description>
+                </ServiceEvent>
+                <Signatory>C LYALL</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>STL</ServiceAreaCode>
+                    <Description>BRIDGETON,MO-USA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+        </ShipmentInfo>
+    </AWBInfo>
+    <AWBInfo>
+        <AWBNumber>9422367220</AWBNumber>
+        <TrackedBy>
+            <LPNumber>JD011936367670025816</LPNumber>
+        </TrackedBy>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <ShipmentInfo>
+            <OriginServiceArea>
+                <ServiceAreaCode>HKG</ServiceAreaCode>
+                <Description>HONG KONG - HONG KONG</Description>
+            </OriginServiceArea>
+            <DestinationServiceArea>
+                <ServiceAreaCode>LEH</ServiceAreaCode>
+                <Description>LE HAVRE - FRANCE</Description>
+            </DestinationServiceArea>
+            <ShipperName>TONTEC INTERNATIIONAL LIMITED</ShipperName>
+            <ShipperAccountNumber>630276297</ShipperAccountNumber>
+            <ConsigneeName>SCHNEIDER TOSHIBA INVERTER EUROPE</ConsigneeName>
+            <ShipmentDate>2010-07-17T11:11:00</ShipmentDate>
+            <Pieces>1</Pieces>
+            <Weight>20.01</Weight>
+            <WeightUnit>K</WeightUnit>
+            <GlobalProductCode>P</GlobalProductCode>
+            <ShipmentDesc>EXPRESS WORLDWIDE (nondoc)PLASTIC P</ShipmentDesc>
+            <DlvyNotificationFlag>N</DlvyNotificationFlag>
+            <Shipper>
+                <City>KOWLOON</City>
+                <CountryCode>HK</CountryCode>
+            </Shipper>
+            <Consignee>
+                <City>EURE</City>
+                <PostalCode>27120</PostalCode>
+                <CountryCode>FR</CountryCode>
+            </Consignee>
+            <ShipperReference>
+                <ReferenceID>8100048270</ReferenceID>
+            </ShipperReference>
+            <ShipmentEvent>
+                <Date>2010-07-17</Date>
+                <Time>11:11:00</Time>
+                <ServiceEvent>
+                    <EventCode>PU</EventCode>
+                    <Description>Shipment picked up</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>HKG</ServiceAreaCode>
+                    <Description>HONG KONG - HONG KONG</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-19</Date>
+                <Time>02:12:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance delay</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CDG</ServiceAreaCode>
+                    <Description>PARIS - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-20</Date>
+                <Time>12:29:00</Time>
+                <ServiceEvent>
+                    <EventCode>WC</EventCode>
+                    <Description>With delivery courier</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEH</ServiceAreaCode>
+                    <Description>LE HAVRE - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-20</Date>
+                <Time>13:28:00</Time>
+                <ServiceEvent>
+                    <EventCode>RD</EventCode>
+                    <Description>Recipient refused delivery</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEH</ServiceAreaCode>
+                    <Description>LE HAVRE - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-20</Date>
+                <Time>18:11:00</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at Location LE HAVRE - FRANCE</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEH</ServiceAreaCode>
+                    <Description>LE HAVRE - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-20</Date>
+                <Time>19:36:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed from DHL facility in LE HAVRE
+                        - FRANCE</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEH</ServiceAreaCode>
+                    <Description>LE HAVRE - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-20</Date>
+                <Time>21:04:00</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at DHL facility in PARIS - FRANCE</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CDG</ServiceAreaCode>
+                    <Description>PARIS - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-21</Date>
+                <Time>17:28:00</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at Location LE HAVRE - FRANCE</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEH</ServiceAreaCode>
+                    <Description>LE HAVRE - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-21</Date>
+                <Time>19:34:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed from DHL facility in LE HAVRE
+                        - FRANCE</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEH</ServiceAreaCode>
+                    <Description>LE HAVRE - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-21</Date>
+                <Time>21:06:00</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at DHL facility in PARIS - FRANCE</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CDG</ServiceAreaCode>
+                    <Description>PARIS - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-22</Date>
+                <Time>07:16:00</Time>
+                <ServiceEvent>
+                    <EventCode>AR</EventCode>
+                    <Description>Arrived at DHL facility in PARIS - FRANCE</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CDG</ServiceAreaCode>
+                    <Description>PARIS - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-22</Date>
+                <Time>09:00:00</Time>
+                <ServiceEvent>
+                    <EventCode>WC</EventCode>
+                    <Description>With delivery courier</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>CDG</ServiceAreaCode>
+                    <Description>PARIS - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-22</Date>
+                <Time>12:25:00</Time>
+                <ServiceEvent>
+                    <EventCode>OK</EventCode>
+                    <Description>Shipment delivered</Description>
+                </ServiceEvent>
+                <Signatory>GTW3700</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>CDG</ServiceAreaCode>
+                    <Description>PARIS - FRANCE</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+        </ShipmentInfo>
+    </AWBInfo>
+    <AWBInfo>
+        <AWBNumber>4062918510</AWBNumber>
+        <TrackedBy>
+            <LPNumber>JD0002285604002604</LPNumber>
+        </TrackedBy>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <ShipmentInfo>
+            <OriginServiceArea>
+                <ServiceAreaCode>LON</ServiceAreaCode>
+                <Description>LAMBETH - UNITED KINGDOM</Description>
+            </OriginServiceArea>
+            <DestinationServiceArea>
+                <ServiceAreaCode>SYD</ServiceAreaCode>
+                <Description>SYDNEY - AUSTRALIA</Description>
+            </DestinationServiceArea>
+            <ShipperName>AH</ShipperName>
+            <ShipperAccountNumber>135296464</ShipperAccountNumber>
+            <ConsigneeName>SHENTEL LEE</ConsigneeName>
+            <ShipmentDate>2010-07-16T17:18:00</ShipmentDate>
+            <Pieces>1</Pieces>
+            <Weight>1.92</Weight>
+            <WeightUnit>K</WeightUnit>
+            <GlobalProductCode>P</GlobalProductCode>
+            <ShipmentDesc>HANDBAG MADE OF LEATHER (5050925578</ShipmentDesc>
+            <DlvyNotificationFlag>Y</DlvyNotificationFlag>
+            <Shipper>
+                <City>LONDON</City>
+                <PostalCode>SW8 3HE</PostalCode>
+            </Shipper>
+            <Consignee>
+                <City>SYDNEY NSW</City>
+                <PostalCode>2031</PostalCode>
+                <CountryCode>AU</CountryCode>
+            </Consignee>
+            <ShipperReference>
+                <ReferenceID>WEB-125226</ReferenceID>
+            </ShipperReference>
+            <ShipmentEvent>
+                <Date>2010-07-16</Date>
+                <Time>17:18:00</Time>
+                <ServiceEvent>
+                    <EventCode>PU</EventCode>
+                    <Description>Shipment picked up</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LON</ServiceAreaCode>
+                    <Description>LAMBETH - UNITED KINGDOM</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-19</Date>
+                <Time>07:25:00</Time>
+                <ServiceEvent>
+                    <EventCode>IC</EventCode>
+                    <Description>Processed for clearance at SYDNEY - AUSTRALIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SYD</ServiceAreaCode>
+                    <Description>SYDNEY - AUSTRALIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-19</Date>
+                <Time>17:42:00</Time>
+                <ServiceEvent>
+                    <EventCode>CD</EventCode>
+                    <Description>Clearance delay</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SYD</ServiceAreaCode>
+                    <Description>SYDNEY - AUSTRALIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-20</Date>
+                <Time>20:37:00</Time>
+                <ServiceEvent>
+                    <EventCode>OH</EventCode>
+                    <Description>Shipment on hold</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SYD</ServiceAreaCode>
+                    <Description>SYDNEY - AUSTRALIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2010-07-20</Date>
+                <Time>20:37:00</Time>
+                <ServiceEvent>
+                    <EventCode>CR</EventCode>
+                    <Description>Clearance processing complete at SYDNEY
+                        - AUSTRALIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SYD</ServiceAreaCode>
+                    <Description>SYDNEY - AUSTRALIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+        </ShipmentInfo>
+    </AWBInfo>
+</req:TrackingResponse>
+
+

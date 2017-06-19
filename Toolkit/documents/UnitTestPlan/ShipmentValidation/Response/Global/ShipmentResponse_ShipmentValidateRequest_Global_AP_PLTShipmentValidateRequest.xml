@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><res:ShipmentResponse xmlns:res='http://www.dhl.com' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2015-11-11T14:35:13+01:00</MessageTime>
+            <MessageReference>211222333444555666777888999</MessageReference>
+            <SiteID>CustomerSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <RegionCode>AP</RegionCode>
+    <Note>
+        <ActionNote>Success</ActionNote>
+        <Condition>
+            <ConditionCode>DIV001</ConditionCode>
+            <ConditionData>Division code has been replaced to valid GREF
+                Division Code</ConditionData>
+        </Condition>
+    </Note>
+    <AirwayBillNumber>1100000016</AirwayBillNumber>
+    <BillingCode>DSA</BillingCode>
+    <CurrencyCode>AUD</CurrencyCode>
+    <CourierMessage>For testing only. Please do not ship</CourierMessage>
+    <DestinationServiceArea>
+        <ServiceAreaCode>LON</ServiceAreaCode>
+        <FacilityCode>LAM</FacilityCode>
+        <InboundSortCode>.</InboundSortCode>
+    </DestinationServiceArea>
+    <OriginServiceArea>
+        <ServiceAreaCode>SYD</ServiceAreaCode>
+        <FacilityCode>SSE</FacilityCode>
+        <OutboundSortCode>.</OutboundSortCode>
+    </OriginServiceArea>
+    <Rated>N</Rated>
+    <InsuredAmount>10.00</InsuredAmount>
+    <WeightUnit>K</WeightUnit>
+    <ChargeableWeight>2.5</ChargeableWeight>
+    <DimensionalWeight>4.8</DimensionalWeight>
+    <CountryCode>AU</CountryCode>
+    <Barcodes>
+        <AWBBarCode>iVBORw0KGgoAAAANSUhEUgAAAYwAAABeAQMAAAAKdrGZAAAABlBMVEX///8AAABVwtN+AAAAZ0lEQVR42mNkYGBIyL8wZbPa4QsTzcQCguU1fs385XDlxKn/y+wCvhp9blg5ASR5Krwn4Ou9+UoLGBiYGEgGo1pGtYxqGdUyqmVUy6iWUS2jWka1jGoZ1TKqZVTLqJZRLaNaRrWQCgCcLRm8+/BwawAAAABJRU5ErkJggg==</AWBBarCode>
+        <OriginDestnBarcode>iVBORw0KGgoAAAANSUhEUgAAATUAAABeAQMAAAB4lRFqAAAABlBMVEX///8AAABVwtN+AAAAVUlEQVR42mNkYGBIyL8whVsz6l56WQCDjvXmaQHB8pqpvg1RIkd1fwlH5V+YeIGBgYmBODCqblTdqLpRdaPqRtWNqhtVN6puVN2oulF1o+pG1VFDHQD0AA68KeuQmwAAAABJRU5ErkJggg==</OriginDestnBarcode>
+        <DHLRoutingBarCode>iVBORw0KGgoAAAANSUhEUgAAAawAAABeAQMAAABFK7JJAAAABlBMVEX///8AAABVwtN+AAAAaElEQVR42u3LIRJAQACG0X8FkmxG2uIsrqHYkXSrcARNXMk9XEMx4xLauoMkfK8/I2nIx6votzUeUla6aM0yudDcU5yrx1jFs1MapGL2rd99baVEn9BoNBqNRqPRaDQajUaj0Wi0f7cXZLEUvFojbXQAAAAASUVORK5CYII=</DHLRoutingBarCode>
+    </Barcodes>
+    <Piece>2</Piece>
+    <Contents>For testing only. Please do not ship</Contents>
+    <Reference>
+        <ReferenceID>reference</ReferenceID>
+        <ReferenceType>St</ReferenceType>
+    </Reference>
+    <Consignee>
+        <CompanyName>IBM UK Sdn Bhd</CompanyName>
+        <AddressLine>19th Floor, Plaza IBM</AddressLine>
+        <AddressLine>No. 8, First Avenue,</AddressLine>
+        <AddressLine>Unique Lane</AddressLine>
+        <City>London</City>
+        <PostalCode>SE18</PostalCode>
+        <CountryCode>GB</CountryCode>
+        <CountryName>United Kingdom</CountryName>
+        <Contact>
+            <PersonName>Ms Ellie White</PersonName>
+            <PhoneNumber>11234325423</PhoneNumber>
+            <PhoneExtension>45232</PhoneExtension>
+            <FaxNumber>11234325423</FaxNumber>
+            <Telex>454586</Telex>
+            <Email>test@dhl.com</Email>
+        </Contact>
+    </Consignee>
+    <Shipper>
+        <ShipperID>964366439</ShipperID>
+        <CompanyName>Sydney South East SC</CompanyName>
+        <AddressLine>3 Keith Smith Avenue</AddressLine>
+        <AddressLine>West Wing</AddressLine>
+        <City>Mascot</City>
+        <Division>N S W</Division>
+        <DivisionCode>AH</DivisionCode>
+        <PostalCode>2020</PostalCode>
+        <CountryCode>AU</CountryCode>
+        <CountryName>Australia</CountryName>
+        <Contact>
+            <PersonName>santa santa</PersonName>
+            <PhoneNumber>15356456364</PhoneNumber>
+            <PhoneExtension>6536</PhoneExtension>
+            <FaxNumber>17456356365</FaxNumber>
+            <Telex>74558</Telex>
+            <Email>test@dhl.com</Email>
+        </Contact>
+    </Shipper>
+    <CustomerID>131297</CustomerID>
+    <ShipmentDate>2015-11-15</ShipmentDate>
+    <GlobalProductCode>P</GlobalProductCode>
+    <SpecialService>
+        <SpecialServiceType>WY</SpecialServiceType>
+        <SpecialServiceDesc>PAPERLESS TRADE</SpecialServiceDesc>
+    </SpecialService>
+    <Billing>
+        <ShipperAccountNumber>964366439</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <DutyPaymentType>R</DutyPaymentType>
+    </Billing>
+    <Dutiable>
+        <DeclaredValue>50.50</DeclaredValue>
+        <DeclaredCurrency>AUD</DeclaredCurrency>
+        <ShipperEIN>ShipperEIN</ShipperEIN>
+    </Dutiable>
+    <DHLRoutingCode>GBSE18+48000001</DHLRoutingCode>
+    <DHLRoutingDataId>2L</DHLRoutingDataId>
+    <ProductContentCode>WPX</ProductContentCode>
+    <ProductShortName>EXPRESS WORLDWIDE</ProductShortName>
+    <InternalServiceCode>C</InternalServiceCode>
+    <InternalServiceCode>PLT</InternalServiceCode>
+    <DeliveryDateCode/>
+    <DeliveryTimeCode/>
+    <Pieces>
+        <Piece>
+            <PieceNumber>1</PieceNumber>
+            <Depth>20</Depth>
+            <Width>30</Width>
+            <Height>40</Height>
+            <Weight>0.5</Weight>
+            <PackageType>EE</PackageType>
+            <DataIdentifier>J</DataIdentifier>
+            <LicensePlate>JD010000000000000002</LicensePlate>
+            <LicensePlateBarCode>iVBORw0KGgoAAAANSUhEUgAAAZYAAABeAQMAAAA6+qC4AAAABlBMVEX///8AAABVwtN+AAAAYElEQVR42u3LIRJAQBxG8W/NWElR5L2WE5Als8E/bpYUM3sbxyC6BckBNOG99MrPSZrquJ1pnMNulTWXz62pk+vls96VyrDew7EkqdD3MBgMBoPBYDAYDAaDwWAwmD+ZBxTWD7xX4z4wAAAAAElFTkSuQmCC</LicensePlateBarCode>
+        </Piece>
+    </Pieces>
+    <PLTStatus>A</PLTStatus></res:ShipmentResponse>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:CancelPURequest xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.dhl.com cancel-pickup-global-req.xsd" schemaVersion="1.0">
+	<Request>
+        <ServiceHeader>
+			<MessageTime>2001-12-19T09:30:47-05:00</MessageTime>
+			<MessageReference>1234567890123456789012345678901</MessageReference>
+	<SiteID>TestSiteID</SiteID>
+                        
+	<Password>testPwd</Password>
+		</ServiceHeader>
+    </Request>
+	<RegionCode>AM</RegionCode>
+	<ConfirmationNumber>743511</ConfirmationNumber>
+	<RequestorName>Rikhil</RequestorName>
+	 <CountryCode>BR</CountryCode>
+	<Reason>001</Reason>
+	<PickupDate>2013-10-10</PickupDate>
+	<CancelTime>10:20</CancelTime>
+</req:CancelPURequest>

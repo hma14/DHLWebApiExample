@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:BookPURequest xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com book-pickup-global-req_EA.xsd" schemaVersion="1.0">
+    <Request>
+        <ServiceHeader>
+            <MessageTime>2013-08-03T11:28:56.000-08:00</MessageTime>
+            <MessageReference>1234567890123456789012345678901</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+            <Password>testPwd</Password>
+        </ServiceHeader>
+    </Request>
+    <RegionCode>EU</RegionCode>
+    <Requestor>
+    </Requestor>
+   <Place>
+        
+	<LocationType>B</LocationType>        
+	<CompanyName>Test and Co</CompanyName>        
+	<Address1>123 Test Ave</Address1>       
+        <Address2>Test Bus Park</Address2>        
+	<PackageLocation>Reception</PackageLocation>        
+	<City>Hounslow</City>        
+	<CountryCode>GB</CountryCode>        
+	<PostalCode>TW4 6JS</PostalCode>        
+</Place>
+
+    <Pickup>
+        <PickupDate>2013-10-19</PickupDate>
+        <ReadyByTime>10:20</ReadyByTime>
+        <CloseTime>14:20</CloseTime>
+     </Pickup>
+    <PickupContact>
+        <PersonName>Subhayu</PersonName>
+        <Phone>4801313131</Phone>
+    </PickupContact>
+    <ShipmentDetails>
+        <AccountType>D</AccountType>
+        <AccountNumber>130000279</AccountNumber>
+        <ChargeCard>
+            <ChargeCardNo>1234567891223</ChargeCardNo>
+            <ChargeCardType>AM</ChargeCardType>
+            <ChargeCardExpiryDate>0100</ChargeCardExpiryDate>
+        </ChargeCard>
+        <BillToAccountNumber>123456789</BillToAccountNumber>
+        <AWBNumber>7520067111</AWBNumber>
+        <NumberOfPieces>2</NumberOfPieces>
+        <Weight>999.999</Weight>
+        <WeightUnit>K</WeightUnit>
+        <GlobalProductCode>D</GlobalProductCode>
+        <DoorTo>DD</DoorTo>
+        <DimensionUnit>C</DimensionUnit>
+        <InsuredAmount>99.99</InsuredAmount>
+        <InsuredCurrencyCode>Str</InsuredCurrencyCode>
+        <Pieces>
+        </Pieces>
+        <SpecialService>I</SpecialService>
+    </ShipmentDetails>
+</req:BookPURequest>

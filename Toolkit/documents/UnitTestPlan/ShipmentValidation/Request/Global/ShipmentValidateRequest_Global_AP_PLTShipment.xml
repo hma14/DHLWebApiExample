@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:ShipmentRequest xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com ship-val-global-req.xsd" schemaVersion="5.0">
+	<Request>
+		<ServiceHeader>
+			<MessageTime>2013-07-30T10:30:01.000-08:00</MessageTime>
+			<MessageReference>211222333444555666777888999</MessageReference>
+			<SiteID>CustomerSiteID</SiteID>
+			<Password>CustomerPassword</Password>
+		</ServiceHeader>
+	</Request>
+	<RegionCode>AP</RegionCode>
+	<LanguageCode>en</LanguageCode>
+	<PiecesEnabled>Y</PiecesEnabled>
+	<Billing>
+		<ShipperAccountNumber>964366439</ShipperAccountNumber>
+		<ShippingPaymentType>S</ShippingPaymentType>
+		<DutyPaymentType>R</DutyPaymentType>
+	</Billing>
+	<Consignee>
+		<CompanyName>IBM UK Sdn Bhd</CompanyName>
+		<AddressLine>19th Floor, Plaza IBM</AddressLine>
+		<AddressLine>No. 8, First Avenue,</AddressLine>
+		<AddressLine>Unique Lane</AddressLine> 
+		<City>London</City>
+		<PostalCode>SE18</PostalCode>
+		<CountryCode>GB</CountryCode>
+		<CountryName>United Kingdom</CountryName>
+		<Contact>
+			<PersonName>Ms Ellie White</PersonName>
+			<PhoneNumber>11234325423</PhoneNumber>
+			<PhoneExtension>45232</PhoneExtension>
+			<FaxNumber>11234325423</FaxNumber>
+			<Telex>454586</Telex>
+			<Email>test@dhl.com</Email>
+		</Contact>
+	</Consignee>
+	<Commodity>
+		<CommodityCode>cc</CommodityCode>
+		<CommodityName>cm</CommodityName>
+	</Commodity>
+	<Dutiable>
+		<DeclaredValue>50.50</DeclaredValue>
+		<DeclaredCurrency>AUD</DeclaredCurrency>
+		<ShipperEIN>ShipperEIN</ShipperEIN>		
+	</Dutiable>
+	<Reference>
+		<ReferenceID>reference</ReferenceID>
+		<ReferenceType>St</ReferenceType>
+	</Reference>
+	<ShipmentDetails>
+		<NumberOfPieces>2</NumberOfPieces>
+		<Pieces>
+			<Piece>
+				<PieceID>1</PieceID>
+				<PackageType>EE</PackageType>
+				<Weight>0.5</Weight>
+				<Width>30</Width>
+				<Height>40</Height>
+				<Depth>20</Depth>
+			</Piece>
+		</Pieces>
+		<Weight>2.5</Weight>
+		<WeightUnit>K</WeightUnit>
+		<GlobalProductCode>P</GlobalProductCode>
+		<LocalProductCode>P</LocalProductCode>
+		<Date>2015-11-15</Date>
+		<Contents>For testing only. Please do not ship</Contents>
+		<DoorTo>DD</DoorTo>		
+		<DimensionUnit>C</DimensionUnit>
+		<InsuredAmount>10.00</InsuredAmount>
+		<PackageType>EE</PackageType>
+		<IsDutiable>Y</IsDutiable>
+		<CurrencyCode>AUD</CurrencyCode>
+	</ShipmentDetails>
+	<Shipper>
+		<ShipperID>964366439</ShipperID>
+		<CompanyName>Sydney South East SC</CompanyName>
+		<AddressLine>3 Keith Smith Avenue</AddressLine>
+		<AddressLine>West Wing</AddressLine>
+		<City>Mascot</City>
+		<DivisionCode>mc</DivisionCode>
+		<PostalCode>2020</PostalCode>
+		<CountryCode>AU</CountryCode>
+		<CountryName>Australia</CountryName>
+		<Contact>
+			<PersonName>santa santa</PersonName>
+			<PhoneNumber>15356456364</PhoneNumber>
+			<PhoneExtension>6536</PhoneExtension>
+			<FaxNumber>17456356365</FaxNumber>
+			<Telex>74558</Telex>
+			<Email>test@dhl.com</Email>
+		</Contact>
+	</Shipper>
+	<SpecialService>
+		<SpecialServiceType>WY</SpecialServiceType>
+	</SpecialService>
+  <DocImages>
+    <DocImage>
+      <Type>CIN</Type>
+      <Image>SUkqAAgA</Image>
+      <ImageFormat>PDF</ImageFormat>
+    </DocImage>
+  </DocImages>
+</req:ShipmentRequest>

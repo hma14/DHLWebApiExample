@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:TrackingResponse xmlns:res="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com TrackingResponse.xsd">
+<Response>
+        <ServiceHeader>
+            <MessageTime>2002-06-25T11:28:56-08:00</MessageTime>
+            <MessageReference>1234567890123456789012345678</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <AWBInfo>
+        <AWBNumber/>
+        <Status>
+            <ActionStatus>No Shipments Found</ActionStatus>
+            <Condition>
+                <ConditionCode>103</ConditionCode>
+                <ConditionData>No Shipments Found for AWBNumber 123456789</ConditionData>
+            </Condition>
+        </Status>
+    </AWBInfo>
+</res:TrackingResponse>

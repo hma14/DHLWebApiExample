@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:TrackingResponse xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com TrackingResponse.xsd">
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2013-10-06T17:15:13+08:00</MessageTime>
+            <MessageReference>1234567890123456789012345678</MessageReference>
+            <SiteID>TestSiteID</SiteID>
+        </ServiceHeader>
+    </Response>
+    <AWBInfo>
+        <AWBNumber>6372653501</AWBNumber>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <ShipmentInfo>
+            <OriginServiceArea/>
+            <DestinationServiceArea/>
+            <ShipperName/>
+            <ConsigneeName/>
+            <ShipmentDate/>
+            <DlvyNotificationFlag>Y</DlvyNotificationFlag>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>11:30:00</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at Sort Facility PRISTINA - KOSOVO</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>11:34:00</Time>
+                <ServiceEvent>
+                    <EventCode>IC</EventCode>
+                    <Description>Processed for clearance at PRISTINA - KOSOVO</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>17:18:00</Time>
+                <ServiceEvent>
+                    <EventCode>BN</EventCode>
+                    <Description>Broker notified to arrange for clearance</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>17:28:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>A clearance other than standard
+                        Customs entry is required for this shipment.</FurtherDetails>
+                    <NextSteps>Further processing will occur as
+                        instructed by the regulatory authority. A DHL
+                        representative shall attempt to contact the
+                        importer or shipper if further information is required</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-29</Date>
+                <Time>18:19:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>A clearance other than standard
+                        Customs entry is required for this shipment.</FurtherDetails>
+                    <NextSteps>Further processing will occur as
+                        instructed by the regulatory authority. A DHL
+                        representative shall attempt to contact the
+                        importer or shipper if further information is required</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-30</Date>
+                <Time>17:40:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>A clearance other than standard
+                        Customs entry is required for this shipment.</FurtherDetails>
+                    <NextSteps>Further processing will occur as
+                        instructed by the regulatory authority. A DHL
+                        representative shall attempt to contact the
+                        importer or shipper if further information is required</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-09-02</Date>
+                <Time>13:41:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>A clearance other than standard
+                        Customs entry is required for this shipment.</FurtherDetails>
+                    <NextSteps>Further processing will occur as
+                        instructed by the regulatory authority. A DHL
+                        representative shall attempt to contact the
+                        importer or shipper if further information is required</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-09-03</Date>
+                <Time>17:28:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>A clearance other than standard
+                        Customs entry is required for this shipment.</FurtherDetails>
+                    <NextSteps>Further processing will occur as
+                        instructed by the regulatory authority. A DHL
+                        representative shall attempt to contact the
+                        importer or shipper if further information is required</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-09-04</Date>
+                <Time>17:52:00</Time>
+                <ServiceEvent>
+                    <EventCode>UD</EventCode>
+                    <Description>Clearance event</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <EventRemarks>
+                    <FurtherDetails>A clearance other than standard
+                        Customs entry is required for this shipment.</FurtherDetails>
+                    <NextSteps>Further processing will occur as
+                        instructed by the regulatory authority. A DHL
+                        representative shall attempt to contact the
+                        importer or shipper if further information is required</NextSteps>
+                </EventRemarks>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-09-05</Date>
+                <Time>08:15:00</Time>
+                <ServiceEvent>
+                    <EventCode>BR</EventCode>
+                    <Description>Delivered to broker as requested</Description>
+                </ServiceEvent>
+                <Signatory>00</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>PRN</ServiceAreaCode>
+                    <Description>PRISTINA - KOSOVO</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+        </ShipmentInfo>
+    </AWBInfo>
+    <AWBInfo>
+        <AWBNumber>6372653501</AWBNumber>
+        <Status>
+            <ActionStatus>success</ActionStatus>
+        </Status>
+        <ShipmentInfo>
+            <OriginServiceArea>
+                <ServiceAreaCode>BFE</ServiceAreaCode>
+                <Description>BIELEFELD - GERMANY</Description>
+            </OriginServiceArea>
+            <DestinationServiceArea>
+                <ServiceAreaCode>FRA</ServiceAreaCode>
+                <Description>FRANKFURT - GERMANY</Description>
+            </DestinationServiceArea>
+            <ShipperName>ARVATO DISTRIBUTION GMBHBETRIEBSSTA</ShipperName>
+            <ShipperAccountNumber>145590899</ShipperAccountNumber>
+            <ConsigneeName>JAN WENKLER</ConsigneeName>
+            <ShipmentDate>2013-08-27T00:00:00</ShipmentDate>
+            <Pieces>1</Pieces>
+            <Weight>0.12</Weight>
+            <WeightUnit>K</WeightUnit>
+            <GlobalProductCode>T</GlobalProductCode>
+            <DlvyNotificationFlag>N</DlvyNotificationFlag>
+            <Shipper>
+                <City>Herzebrock-Clarholz</City>
+                <PostalCode>33442</PostalCode>
+                <CountryCode>DE</CountryCode>
+            </Shipper>
+            <Consignee>
+                <City>Bad Camberg Wurges</City>
+                <PostalCode>65520</PostalCode>
+                <CountryCode>DE</CountryCode>
+            </Consignee>
+            <ShipperReference>
+                <ReferenceID>0213489336</ReferenceID>
+            </ShipperReference>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>17:10:00</Time>
+                <ServiceEvent>
+                    <EventCode>PU</EventCode>
+                    <Description>Shipment picked up</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BFE</ServiceAreaCode>
+                    <Description>BIELEFELD - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-26</Date>
+                <Time>20:40:48</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at STUTTGART - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STR</ServiceAreaCode>
+                    <Description>STUTTGART - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-26</Date>
+                <Time>22:29:18</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in STUTTGART - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>STR</ServiceAreaCode>
+                    <Description>STUTTGART - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-26</Date>
+                <Time>23:41:22</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at Sort Facility LEIPZIG - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEJ</ServiceAreaCode>
+                    <Description>LEIPZIG - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>00:05:57</Time>
+                <ServiceEvent>
+                    <EventCode>PL</EventCode>
+                    <Description>Processed at LEIPZIG - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEJ</ServiceAreaCode>
+                    <Description>LEIPZIG - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>04:19:46</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in LEIPZIG - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>LEJ</ServiceAreaCode>
+                    <Description>LEIPZIG - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>06:06:25</Time>
+                <ServiceEvent>
+                    <EventCode>TR</EventCode>
+                    <Description>Transferred through BRATISLAVA - SLOVAKIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BTS</ServiceAreaCode>
+                    <Description>BRATISLAVA - SLOVAKIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>06:07:45</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in BRATISLAVA - SLOVAKIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BTS</ServiceAreaCode>
+                    <Description>BRATISLAVA - SLOVAKIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>08:27:35</Time>
+                <ServiceEvent>
+                    <EventCode>TR</EventCode>
+                    <Description>Transferred through SOFIA - BULGARIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SOF</ServiceAreaCode>
+                    <Description>SOFIA - BULGARIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>08:33:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in SOFIA - BULGARIA</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SOF</ServiceAreaCode>
+                    <Description>SOFIA - BULGARIA</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>09:42:29</Time>
+                <ServiceEvent>
+                    <EventCode>AF</EventCode>
+                    <Description>Arrived at Sort Facility SKOPJE -
+                        MACEDONIA, REPUBLIC OF</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SKP</ServiceAreaCode>
+                    <Description>SKOPJE - MACEDONIA, REPUBLIC OF</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>12:22:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in SKOPJE -
+                        MACEDONIA, REPUBLIC OF</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>SKP</ServiceAreaCode>
+                    <Description>SKOPJE - MACEDONIA, REPUBLIC OF</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-27</Date>
+                <Time>20:17:00</Time>
+                <ServiceEvent>
+                    <EventCode>DF</EventCode>
+                    <Description>Departed Facility in BIELEFELD - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>BFE</ServiceAreaCode>
+                    <Description>BIELEFELD - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>05:41:00</Time>
+                <ServiceEvent>
+                    <EventCode>AR</EventCode>
+                    <Description>Arrived at Delivery Facility in
+                        FRANKFURT - GERMANY</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>FRA</ServiceAreaCode>
+                    <Description>FRANKFURT - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>07:32:00</Time>
+                <ServiceEvent>
+                    <EventCode>WC</EventCode>
+                    <Description>With delivery courier</Description>
+                </ServiceEvent>
+                <Signatory/>
+                <ServiceArea>
+                    <ServiceAreaCode>FRA</ServiceAreaCode>
+                    <Description>FRANKFURT - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+            <ShipmentEvent>
+                <Date>2013-08-28</Date>
+                <Time>10:03:00</Time>
+                <ServiceEvent>
+                    <EventCode>OK</EventCode>
+                    <Description>Delivered - Signed for by</Description>
+                </ServiceEvent>
+                <Signatory>WENKLER</Signatory>
+                <ServiceArea>
+                    <ServiceAreaCode>FRA</ServiceAreaCode>
+                    <Description>FRANKFURT - GERMANY</Description>
+                </ServiceArea>
+            </ShipmentEvent>
+        </ShipmentInfo>
+        <Pieces>
+            <PieceInfo>
+                <PieceDetails>
+                    <AWBNumber>6372653501</AWBNumber>
+                    <LicensePlate>JD000390000059112835</LicensePlate>
+                    <PieceNumber>1</PieceNumber>
+                    <ActualDepth>37.5</ActualDepth>
+                    <ActualWidth>25.0</ActualWidth>
+                    <ActualHeight>29.5</ActualHeight>
+                    <ActualWeight>2.04</ActualWeight>
+                    <Depth>36.0</Depth>
+                    <Width>23.0</Width>
+                    <Height>27.0</Height>
+                    <Weight>2.0</Weight>
+                    <PackageType>COY</PackageType>
+                    <DimWeight>27656.25</DimWeight>
+                    <WeightUnit>KG</WeightUnit>
+                </PieceDetails>
+                <PieceEvent>
+                    <Date>2013-08-26</Date>
+                    <Time>20:40:48</Time>
+                    <ServiceEvent>
+                        <EventCode>PL</EventCode>
+                        <Description>Processed at Location STUTTGART - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>STR</ServiceAreaCode>
+                        <Description>STUTTGART - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-26</Date>
+                    <Time>22:29:18</Time>
+                    <ServiceEvent>
+                        <EventCode>DF</EventCode>
+                        <Description>Departed from DHL facility in
+                            STUTTGART - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>STR</ServiceAreaCode>
+                        <Description>STUTTGART - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-26</Date>
+                    <Time>23:41:22</Time>
+                    <ServiceEvent>
+                        <EventCode>AF</EventCode>
+                        <Description>Arrived at DHL facility in LEIPZIG
+                            - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>LEJ</ServiceAreaCode>
+                        <Description>LEIPZIG - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>00:05:57</Time>
+                    <ServiceEvent>
+                        <EventCode>PL</EventCode>
+                        <Description>Processed at Location LEIPZIG - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>LEJ</ServiceAreaCode>
+                        <Description>LEIPZIG - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>04:19:46</Time>
+                    <ServiceEvent>
+                        <EventCode>DF</EventCode>
+                        <Description>Departed from DHL facility in
+                            LEIPZIG - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>LEJ</ServiceAreaCode>
+                        <Description>LEIPZIG - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>06:06:25</Time>
+                    <ServiceEvent>
+                        <EventCode>TR</EventCode>
+                        <Description>Transferred through BRATISLAVA - SLOVAKIA</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>BTS</ServiceAreaCode>
+                        <Description>BRATISLAVA - SLOVAKIA</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>06:07:45</Time>
+                    <ServiceEvent>
+                        <EventCode>DF</EventCode>
+                        <Description>Departed from DHL facility in
+                            BRATISLAVA - SLOVAKIA</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>BTS</ServiceAreaCode>
+                        <Description>BRATISLAVA - SLOVAKIA</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>08:27:35</Time>
+                    <ServiceEvent>
+                        <EventCode>TR</EventCode>
+                        <Description>Transferred through SOFIA - BULGARIA</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>SOF</ServiceAreaCode>
+                        <Description>SOFIA - BULGARIA</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>08:33:00</Time>
+                    <ServiceEvent>
+                        <EventCode>DF</EventCode>
+                        <Description>Departed from DHL facility in SOFIA
+                            - BULGARIA</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>SOF</ServiceAreaCode>
+                        <Description>SOFIA - BULGARIA</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>09:42:29</Time>
+                    <ServiceEvent>
+                        <EventCode>AF</EventCode>
+                        <Description>Arrived at DHL facility in SKOPJE -
+                            MACEDONIA, REPUBLIC OF</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>SKP</ServiceAreaCode>
+                        <Description>SKOPJE - MACEDONIA, REPUBLIC OF</Description>
+                    </ServiceArea>
+                </PieceEvent>
+            </PieceInfo>
+            <PieceInfo>
+                <PieceDetails>
+                    <AWBNumber>6372653501</AWBNumber>
+                    <LicensePlate>88466281435DE</LicensePlate>
+                    <PieceNumber>2</PieceNumber>
+                    <Weight>0.12</Weight>
+                    <PackageType>COY</PackageType>
+                    <WeightUnit>KG</WeightUnit>
+                </PieceDetails>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>17:10:00</Time>
+                    <ServiceEvent>
+                        <EventCode>PU</EventCode>
+                        <Description>Shipment picked up BIELEFELD - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>BFE</ServiceAreaCode>
+                        <Description>BIELEFELD - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-27</Date>
+                    <Time>20:17:00</Time>
+                    <ServiceEvent>
+                        <EventCode>DF</EventCode>
+                        <Description>Departed from DHL facility in
+                            BIELEFELD - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>BFE</ServiceAreaCode>
+                        <Description>BIELEFELD - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-28</Date>
+                    <Time>05:41:00</Time>
+                    <ServiceEvent>
+                        <EventCode>AR</EventCode>
+                        <Description>Arrived at DHL facility in
+                            FRANKFURT - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>FRA</ServiceAreaCode>
+                        <Description>FRANKFURT - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-28</Date>
+                    <Time>07:32:00</Time>
+                    <ServiceEvent>
+                        <EventCode>WC</EventCode>
+                        <Description>With delivery courier FRANKFURT - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>FRA</ServiceAreaCode>
+                        <Description>FRANKFURT - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+                <PieceEvent>
+                    <Date>2013-08-28</Date>
+                    <Time>10:03:00</Time>
+                    <ServiceEvent>
+                        <EventCode>OK</EventCode>
+                        <Description>Shipment delivered FRANKFURT - GERMANY</Description>
+                    </ServiceEvent>
+                    <ServiceArea>
+                        <ServiceAreaCode>FRA</ServiceAreaCode>
+                        <Description>FRANKFURT - GERMANY</Description>
+                    </ServiceArea>
+                </PieceEvent>
+            </PieceInfo>
+        </Pieces>
+    </AWBInfo>
+    <LanguageCode>en</LanguageCode>
+</req:TrackingResponse>
+
+
