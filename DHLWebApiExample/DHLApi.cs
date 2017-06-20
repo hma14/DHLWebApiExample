@@ -1,6 +1,7 @@
 ﻿using DHLWebApiExample.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -94,21 +95,17 @@ namespace DHLWebApiExample
 #endif
         }
 
-        public void FillDataToXml(string filePath)
+        public void SetupCriteriaToRequestXml(string filePath)
         {
             // Create the XmlDocument.
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
-
-            XmlNode messageTimeNode = doc.SelectSingleNode("//MessageTime");
-            XmlNode messageReferenceNode = doc.SelectSingleNode("//MessageReference");
+            
             XmlNode siteID = doc.SelectSingleNode("//SiteID");
             XmlNode pwd = doc.SelectSingleNode("//Password");
-
-            messageTimeNode.InnerText = DateTime.Now.ToString("o");
-            messageReferenceNode.InnerText = "0000000000000000000010044444";
-            siteID.InnerText = "myTest";
-            pwd.InnerText = "myPassword";
+           
+            siteID.InnerText = ConfigurationManager.AppSettings["DHL_SiteID"];
+            pwd.InnerText = ConfigurationManager.AppSettings["DHL_Password"];
 
             doc.Save(filePath);
 

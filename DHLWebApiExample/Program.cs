@@ -29,6 +29,8 @@ namespace DHLWebApiExample
 #else
             string filePath = Path.Combine(Environment.CurrentDirectory + @"/Xml/", fileName);
 #endif
+            api.SetupCriteriaToRequestXml(filePath);
+
             //List<ResponseAWBInfo> responsInfos = api.ParseXmlTracking(response);
             //OutputTrackingResponse(responsInfos);
 
