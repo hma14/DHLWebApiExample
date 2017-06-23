@@ -90,6 +90,15 @@
     <Content Include="Xml\TrackingResponse_MultipleLP_PieceEnabled_B_1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Xml\Valid12_Quote_IMPPricebyShipper_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\Valid13_Quote_IMPPricebyReceiver_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\Valid15_Quote_VolWeightHigher_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Xml\Valid3_Capability_EU_NonEU_Dutiable_Response.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

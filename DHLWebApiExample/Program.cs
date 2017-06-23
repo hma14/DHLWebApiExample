@@ -5,6 +5,7 @@ using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Web;
+using System.Xml;
 
 namespace DHLWebApiExample
 {
@@ -18,11 +19,13 @@ namespace DHLWebApiExample
             string url = ConfigurationManager.AppSettings["DHLWebApi"];
 
             //string xmlFile = "TrackingRequest_MultipleLP_PieceEnabled_B_1.xml";
-            string xmlFile = "Valid3_Capability_EU_NonEU_Dutiable_Request.xml";
+            //string xmlFile = "Valid3_Capability_EU_NonEU_Dutiable_Request.xml";
             //string xmlFile = "Shipment_Global_AP_RegularShpmt_Request.xml";
             //string xmlFile = "Request.xml";
             //string xmlFile = "BookPickup_GlobalAP_Valid1_Request.xml";
-            //string xmlFile = "TrackingResponse_MultipleLP_PieceEnabled_B_1.xml";
+            //string xmlFile = "Valid15_Quote_VolWeightHigher_Request.xml";
+            string xmlFile = "Valid13_Quote_IMPPricebyReceiver_Request.xml";
+
 #if false
             
             string filePath = Path.Combine(System.Web.Hosting.HostingEnvironment.MapPath(@"~/Xml/"), xmlFile);
@@ -40,7 +43,26 @@ namespace DHLWebApiExample
             }
             else
             {
-                Console.WriteLine(DHLApi.ResponseXmlString);
+                Printout(DHLApi.ResponseXmlString);
+            }
+        }
+
+        private static void Printout(string xmlString)
+        {
+            using (XmlReader reader = XmlReader.Create(new StringReader(xmlString)))
+            {
+                while (reader.Read())
+                {
+                    if (reader.NodeType == XmlNodeType.Element)
+                        Console.Write("{0} ", reader.Name);
+                    if (reader.NodeType == XmlNodeType.Text)
+                    {
+                        Console.WriteLine(" = {0}", reader.Value.Trim());
+                        Console.WriteLine();
+                    }
+
+                }
+                Console.ReadLine();
             }
         }
 
