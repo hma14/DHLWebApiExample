@@ -6,7 +6,9 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Web;
 using System.Xml;
 
 namespace DHLWebApiExample
@@ -21,33 +23,79 @@ namespace DHLWebApiExample
         TRACKING
     }
 
+    
+
     public class DHLApi
     {
-        public WebResponse XmlRequest(string url, string filePath)
+        private static ManualResetEvent allDone = new ManualResetEvent(false);
+        private static byte[] requestBytes;
+        private static string responseString;
+
+        public void XmlRequest(string url, string filePath)
         {
             string xmlText = File.ReadAllText(filePath);
-            WebRequest request = HttpWebRequest.Create(url);
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
+            requestBytes = Encoding.GetEncoding("UTF-8").GetBytes(xmlText);
             request.ContentType = "application/x-www-form-urlencoded";
             request.Method = "POST";
+            request.ContentLength = requestBytes.Length;
+            //request.Date = DateTime.Now;
+            //request.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
 
-            using (var stream = request.GetRequestStream())
-            {
-                var arrBytes = ASCIIEncoding.ASCII.GetBytes(xmlText);
-                stream.Write(arrBytes, 0, arrBytes.Length);
-                stream.Close();
-            }
-            return request.GetResponse();
-            
+            request.BeginGetRequestStream(new AsyncCallback(GetRequestStreamCallback), request);
+
+            // Keep the main thread from continuing while the asynchronous 
+            // operation completes. A real world application 
+            // could do something useful such as updating its user interface. 
+            allDone.WaitOne();
         }
 
-        public DHLResponse XmlResponse(WebResponse response, REQUESTS reqType)
+        private static void GetRequestStreamCallback(IAsyncResult asynchronousResult)
         {
-#if true
-            XmlDocument doc = new XmlDocument();
-            DHLResponse resp = new DHLResponse();
-            var respStream = response.GetResponseStream();
+            HttpWebRequest request = (HttpWebRequest)asynchronousResult.AsyncState;
 
-            doc.Load(respStream);
+            // End the operation
+            Stream postStream = request.EndGetRequestStream(asynchronousResult);
+
+            // Write to the request stream.
+            postStream.Write(requestBytes, 0, requestBytes.Length);
+            postStream.Close();
+
+            // Start the asynchronous operation to get the response
+            request.BeginGetResponse(new AsyncCallback(GetResponseCallback), request);
+        }
+
+        private static void GetResponseCallback(IAsyncResult asynchronousResult)
+        {
+            HttpWebRequest request = (HttpWebRequest)asynchronousResult.AsyncState;
+
+            // End the operation
+            HttpWebResponse response = (HttpWebResponse)request.EndGetResponse(asynchronousResult);
+
+            Stream streamResponse = response.GetResponseStream();
+            StreamReader streamRead = new StreamReader(streamResponse);
+            responseString = streamRead.ReadToEnd();          
+
+            DHLResponse resp = XmlResponse(responseString, REQUESTS.TRACKING);
+            if (resp.RequestType == REQUESTS.TRACKING)
+            {
+                OutputTrackingResponse(resp.Trackings);
+            }
+
+            //Close the stream object
+            streamResponse.Close();
+            streamRead.Close();
+
+            // Release the HttpWebResponse
+            response.Close();
+            allDone.Set();            
+        }
+
+        public static DHLResponse XmlResponse(string respString, REQUESTS reqType)
+        { 
+            DHLResponse resp = new DHLResponse();
+            //XmlDocument doc = new XmlDocument();
+            //doc.LoadXml(respString);
 
             switch (reqType)
             {
@@ -67,32 +115,14 @@ namespace DHLWebApiExample
 
                     break;
                 case REQUESTS.TRACKING:
-                    resp.Trackings = ParseXmlTracking(response);
-                    
+                    resp.Trackings = ParseXmlTracking(respString);
+
                     break;
                 default:
                     break;
             }
-
-
             resp.RequestType = reqType;
-
             return resp;
-
-#else
-            var respStream = response.GetResponseStream();
-            //var reader = new StreamReader(respStream, System.Text.Encoding.ASCII);
-            XmlTextReader reader = new XmlTextReader(respStream);
-
-            while (reader.Read())
-            {
-                if (reader.NodeType == XmlNodeType.Text)
-                {
-                    Console.WriteLine("{0}", reader.Value.Trim());
-                }
-            }
-            Console.ReadLine();
-#endif
         }
 
         public void SetupCriteriaToRequestXml(string filePath)
@@ -100,10 +130,12 @@ namespace DHLWebApiExample
             // Create the XmlDocument.
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
-            
+
+            XmlNode messageTime = doc.SelectSingleNode("//MessageTime");
             XmlNode siteID = doc.SelectSingleNode("//SiteID");
             XmlNode pwd = doc.SelectSingleNode("//Password");
-           
+
+            messageTime.InnerText = DateTime.Now.ToString("o");
             siteID.InnerText = ConfigurationManager.AppSettings["DHL_SiteID"];
             pwd.InnerText = ConfigurationManager.AppSettings["DHL_Password"];
 
@@ -182,11 +214,27 @@ namespace DHLWebApiExample
             }
         }
 
-        public List<ResponseAWBInfo> ParseXmlTracking(WebResponse response)
+        public static List<ResponseAWBInfo> ParseXmlTracking(string respString)
         {
             XmlDocument doc = new XmlDocument();
-            var respStream = response.GetResponseStream();
-            doc.Load(respStream);
+            doc.LoadXml(responseString);
+            //try
+            //{
+            //    Stream respStream = response.GetResponseStream();
+            //    using (var memStream = new MemoryStream())
+            //    {
+            //        respStream.CopyTo(memStream);
+            //        memStream.Position = 0;
+            //        doc.Load(memStream);
+            //    }
+            //    response.Close();
+                
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("Exception: {0}", ex.Message);
+            //    Console.Read();
+            //}
 
             List<ResponseAWBInfo> AWBInfoList = new List<ResponseAWBInfo>();
             XmlNodeList AWBInfos = doc.SelectNodes("//AWBInfo");
@@ -252,7 +300,7 @@ namespace DHLWebApiExample
                     List<ResponseShipmentEvent> events = new List<ResponseShipmentEvent>();
                     foreach (XmlNode evt in ShipmentEvents)
                     {
-                        XmlNode date = evt.SelectSingleNode("Date");                       
+                        XmlNode date = evt.SelectSingleNode("Date");
                         XmlNode time = evt.SelectSingleNode("Time");
                         XmlNode eventCode = evt.SelectSingleNode("ServiceEvent//EventCode");
                         XmlNode description = evt.SelectSingleNode("ServiceEvent//Description");
@@ -270,7 +318,7 @@ namespace DHLWebApiExample
                             ServiceArea_ServiceAreaCode = serviceAreaCode.InnerText,
                             ServiceArea_Description = description2.InnerText
                         });
-                        
+
                     }
                     AWBInfo.ShipmentInfo = new ResponseShipmentInfo
                     {
@@ -315,6 +363,68 @@ namespace DHLWebApiExample
                 AWBInfoList.Add(AWBInfo);
             }
             return AWBInfoList;
+        }
+
+
+        private static void OutputTrackingResponse(List<ResponseAWBInfo> info)
+        {
+            int nu = 0;
+            foreach (var inf in info)
+            {
+                Console.WriteLine("\n--- No. {0} ---\n", ++nu);
+                Console.WriteLine("AWBNumber = {0}", inf.AWBNumber);
+                Console.WriteLine("TrackedBy_LPNumber = {0}", inf.TrackedBy_LPNumber);
+                Console.WriteLine("Status_ActionStatus = {0}", inf.Status_ActionStatus);
+
+                Console.WriteLine("OriginServiceArea_ServiceAreaCode = {0}", inf.ShipmentInfo.OriginServiceArea_ServiceAreaCode);
+                Console.WriteLine("OriginServiceArea_Description = {0}", inf.ShipmentInfo.OriginServiceArea_Description);
+                Console.WriteLine("DestinationServiceArea_ServiceAreaCode = {0}", inf.ShipmentInfo.DestinationServiceArea_ServiceAreaCode);
+                Console.WriteLine("DestinationServiceArea_Description = {0}", inf.ShipmentInfo.DestinationServiceArea_Description);
+                Console.WriteLine("ShipperName = {0}", inf.ShipmentInfo.ShipperName);
+                Console.WriteLine("ShipperAccountNumber = {0}", inf.ShipmentInfo.ShipperAccountNumber);
+                Console.WriteLine("ConsigneeName = {0}", inf.ShipmentInfo.ConsigneeName);
+                Console.WriteLine("ShipmentDate = {0}", inf.ShipmentInfo.ShipmentDate);
+                Console.WriteLine("Pieces = {0}", inf.ShipmentInfo.Pieces);
+                Console.WriteLine("Weight = {0}", inf.ShipmentInfo.Weight);
+                Console.WriteLine("WeightUnit = {0}", inf.ShipmentInfo.WeightUnit);
+                Console.WriteLine("GlobalProductCode = {0}", inf.ShipmentInfo.GlobalProductCode);
+                Console.WriteLine("ShipmentDesc = {0}", inf.ShipmentInfo.ShipmentDesc);
+                Console.WriteLine("DlvyNotificationFlag = {0}", inf.ShipmentInfo.DlvyNotificationFlag);
+
+                Console.WriteLine("City = {0}", inf.ShipmentInfo.Shipper.City);
+                Console.WriteLine("PostalCode = {0}", inf.ShipmentInfo.Shipper.PostalCode);
+                Console.WriteLine("CountryCode = {0}", inf.ShipmentInfo.Shipper.CountryCode);
+                Console.WriteLine("Consignee.City = {0}", inf.ShipmentInfo.Consignee.City);
+                Console.WriteLine("Consignee.DivisionCode = {0}", inf.ShipmentInfo.Consignee.DivisionCode);
+                Console.WriteLine("Consignee.PostalCode = {0}", inf.ShipmentInfo.Consignee.PostalCode);
+                Console.WriteLine("Consignee.CountryCode = {0}", inf.ShipmentInfo.Consignee.CountryCode);
+
+                foreach (var evt in inf.ShipmentInfo.ShipmentEvents)
+                {
+                    Console.WriteLine("ResponseShipmentEvent Date = {0}", evt.Date);
+                    Console.WriteLine("ResponseShipmentEvent Time = {0}", evt.Time);
+                    Console.WriteLine("ResponseShipmentEvent ServiceEvent_EventCode = {0}", evt.ServiceEvent_EventCode);
+                    Console.WriteLine("ResponseShipmentEvent ServiceEvent_Description = {0}", evt.ServiceEvent_Description);
+                    Console.WriteLine("ResponseShipmentEvent Signatory = {0}", evt.Signatory);
+                    Console.WriteLine("ResponseShipmentEvent ServiceArea_ServiceAreaCode = {0}", evt.ServiceArea_ServiceAreaCode);
+                    Console.WriteLine("ResponseShipmentEvent ServiceArea_Description = {0}", evt.ServiceArea_Description);
+                }
+
+                Console.WriteLine("PieceDetails.AWBNumber = {0}", inf.PieceDetails.AWBNumber);
+                Console.WriteLine("PieceDetails.LicensePlate = {0}", inf.PieceDetails.LicensePlate);
+                Console.WriteLine("PieceDetails.PieceNumber = {0}", inf.PieceDetails.PieceNumber);
+                Console.WriteLine("PieceDetails.ActualDepth = {0}", inf.PieceDetails.ActualDepth);
+                Console.WriteLine("PieceDetails.ActualWidth = {0}", inf.PieceDetails.ActualWidth);
+                Console.WriteLine("PieceDetails.ActualHeight = {0}", inf.PieceDetails.ActualHeight);
+                Console.WriteLine("PieceDetails.ActualWeight = {0}", inf.PieceDetails.ActualWeight);
+                Console.WriteLine("PieceDetails.Depth = {0}", inf.PieceDetails.Depth);
+                Console.WriteLine("PieceDetails.Height = {0}", inf.PieceDetails.Height);
+                Console.WriteLine("PieceDetails.Weight = {0}", inf.PieceDetails.Weight);
+                Console.WriteLine("PieceDetails.PackageType = {0}", inf.PieceDetails.PackageType);
+                Console.WriteLine("PieceDetails.DimWeight = {0}", inf.PieceDetails.DimWeight);
+                Console.WriteLine("PieceDetails.WeightUnit = {0}", inf.PieceDetails.WeightUnit);
+            }
+            Console.Read();
         }
     }
 }
