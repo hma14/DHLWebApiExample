@@ -68,20 +68,20 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Xml\BookPickupRequest_GlobalAP_Valid1.xml">
+    <Content Include="Xml\BookPickup_GlobalAP_Valid1_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\BookPickupResponse_GlobalAP_Valid1.xml">
+    <Content Include="Xml\BookPickup_GlobalAP_Valid1_Response.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Xml\Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Xml\Response.xml" />
-    <Content Include="Xml\ShipmentResponse_ShipmentValidateRequest_Global_AP_RegularShpmt.xml">
+    <Content Include="Xml\Shipment_ShipmentValidateRequest_Global_AP_RegularShpmt_Response.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\ShipmentValidateRequest_Global_AP_RegularShpmt.xml">
+    <Content Include="Xml\Shipment_Global_AP_RegularShpmt_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Xml\TrackingRequest_MultipleLP_PieceEnabled_B_1.xml">
