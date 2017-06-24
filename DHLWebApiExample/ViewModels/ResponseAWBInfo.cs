@@ -12,6 +12,6 @@ namespace DHLWebApiExample.ViewModels
         public string TrackedBy_LPNumber { get; set; }
         public string Status_ActionStatus { get; set; }
         public ResponseShipmentInfo ShipmentInfo { get; set; }
-        public ReponsePieceDetails PieceDetails { get; set; }
+        public ResponsePieceDetails PieceDetails { get; set; }
     }
 }

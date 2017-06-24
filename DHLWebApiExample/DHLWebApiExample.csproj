@@ -50,10 +50,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Address.cs" />
     <Compile Include="ViewModels\BkgDetails.cs" />
+    <Compile Include="ViewModels\CountryPostalCode.cs" />
     <Compile Include="ViewModels\DHLResponse.cs" />
     <Compile Include="ViewModels\Dutiable.cs" />
     <Compile Include="ViewModels\Piece.cs" />
-    <Compile Include="ViewModels\ReponsePieceDetails.cs" />
+    <Compile Include="ViewModels\QtdShp.cs" />
+    <Compile Include="ViewModels\RequestBase.cs" />
+    <Compile Include="ViewModels\RequestQuote.cs" />
+    <Compile Include="ViewModels\ResponsePieceDetails.cs" />
     <Compile Include="ViewModels\ResponseAWBInfo.cs" />
     <Compile Include="ViewModels\ResponseConsignee.cs" />
     <Compile Include="ViewModels\ResponsePieceInfo.cs" />
@@ -62,47 +66,57 @@
     <Compile Include="ViewModels\ResponseShipmentInfo.cs" />
     <Compile Include="ViewModels\ResponseShipper.cs" />
     <Compile Include="ViewModels\ServiceHeader.cs" />
+    <Compile Include="ViewModels\RequestTracking.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Xml\BookPickup_GlobalAP_Valid1_Request.xml">
+    <Content Include="DHLShippingXml\BookPickup_GlobalAP_Valid1_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\BookPickup_GlobalAP_Valid1_Response.xml">
+    <Content Include="DHLShippingXml\BookPickup_GlobalAP_Valid1_Response.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\Request.xml">
+    <Content Include="DHLShippingXml\Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\Response.xml" />
-    <Content Include="Xml\Shipment_ShipmentValidateRequest_Global_AP_RegularShpmt_Response.xml">
+    <Content Include="DHLShippingXml\Response.xml" />
+    <Content Include="DHLShippingXml\Shipment_ShipmentValidateRequest_Global_AP_RegularShpmt_Response.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\Shipment_Global_AP_RegularShpmt_Request.xml">
+    <Content Include="DHLShippingXml\Shipment_Global_AP_RegularShpmt_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\TrackingRequest_MultipleLP_PieceEnabled_B_1.xml">
+    <Content Include="DHLShippingXml\TrackingRequest_MultipleLP_PieceEnabled_B_1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\TrackingResponse_MultipleLP_PieceEnabled_B_1.xml">
+    <Content Include="DHLShippingXml\TrackingResponse_MultipleLP_PieceEnabled_B_1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\Valid12_Quote_IMPPricebyShipper_Request.xml">
+    <Content Include="DHLShippingXml\Valid10_Quote_AP_PriceBreakdownRAS_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\Valid13_Quote_IMPPricebyReceiver_Request.xml">
+    <Content Include="DHLShippingXml\Valid11_Quote_EU_PriceBreakdownRAS_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\Valid15_Quote_VolWeightHigher_Request.xml">
+    <Content Include="DHLShippingXml\Valid12_Quote_IMPPricebyShipper_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\Valid3_Capability_EU_NonEU_Dutiable_Response.xml">
+    <Content Include="DHLShippingXml\Valid13_Quote_IMPPricebyReceiver_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Xml\Valid3_Capability_EU_NonEU_Dutiable_Request.xml">
+    <Content Include="DHLShippingXml\Valid15_Quote_VolWeightHigher_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DHLShippingXml\Valid16_Quote_NonEUNonEU_WithAcctProdService_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DHLShippingXml\Valid3_Capability_EU_NonEU_Dutiable_Response.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DHLShippingXml\Valid3_Capability_EU_NonEU_Dutiable_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

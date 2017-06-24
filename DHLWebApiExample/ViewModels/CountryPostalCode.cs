@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DHLWebApiExample.ViewModels
 {
-    public class Dutiable
+    public class CountryPostalCode
     {
-        public string DeclaredCurrency { get; set; }
-        public string DeclaredValue { get; set; }       
+        public string CountryCode { get; set; }
+        public string Postalcode { get; set; }
     }
 }

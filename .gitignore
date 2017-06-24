@@ -242,3 +242,5 @@ ModelManifest.xml
 .fake/
 Toolkit/
 DHLWebApiExample/Xml/
+*.cs
+*.xml

@@ -18,25 +18,97 @@ namespace DHLWebApiExample
 
             string url = ConfigurationManager.AppSettings["DHLWebApi"];
 
-            //string xmlFile = "TrackingRequest_MultipleLP_PieceEnabled_B_1.xml";
-            //string xmlFile = "Valid3_Capability_EU_NonEU_Dutiable_Request.xml";
+            string xmlFile = "TrackingRequest_MultipleLP_PieceEnabled_B_1.xml";
             //string xmlFile = "Shipment_Global_AP_RegularShpmt_Request.xml";
             //string xmlFile = "Request.xml";
             //string xmlFile = "BookPickup_GlobalAP_Valid1_Request.xml";
             //string xmlFile = "Valid15_Quote_VolWeightHigher_Request.xml";
-            string xmlFile = "Valid13_Quote_IMPPricebyReceiver_Request.xml";
+            //string xmlFile = "Valid13_Quote_IMPPricebyReceiver_Request.xml";
+            //string xmlFile = "Valid10_Quote_AP_PriceBreakdownRAS_Request.xml";
+            //string xmlFile = "Valid11_Quote_EU_PriceBreakdownRAS_Request.xml";
+
+
 
 #if false
             
-            string filePath = Path.Combine(System.Web.Hosting.HostingEnvironment.MapPath(@"~/Xml/"), xmlFile);
+            string filePath = Path.Combine(System.Web.Hosting.HostingEnvironment.MapPath(@"~/DHLShippingXml/"), xmlFile);
 
 #else
-            string filePath = Path.Combine(Environment.CurrentDirectory + @"/Xml/", xmlFile);
+            string filePath = Path.Combine(Environment.CurrentDirectory + @"/DHLShippingXml/", xmlFile);
 #endif
-            DHLApi.SetupCriteriaToRequestXml(filePath);
+            // Setup RequestQuote object
+            RequestBase requestQuote = new RequestQuote
+            {
+                 Origin = new CountryPostalCode()
+                 {
+                     CountryCode = "BE",
+                     Postalcode = "1020"
+                 },
+                
+                BkgDetails = new BkgDetails()
+                {
+                    PaymentCountryCode = "BE",
+                    Date = "2017-06-27",
+                    ReadyTime = "PT10H22M",
+                    ReadyTimeGMTOffset = "+02:00",
+                    DimensionUnit = "CM",
+                    WeightUnit = "KG",
+                    Pieces = new List<Piece>()
+                    {
+                        new Piece()
+                        {
+                            PieceID = 1,
+                            Height = 30,
+                            Depth = 20,
+                            Width = 10,
+                            Weight = 1.0f,
+                        },
+
+                        new Piece()
+                        {
+                            PieceID = 2,
+                            Height = 60,
+                            Depth = 40,
+                            Width = 20,
+                            Weight = 2.0f,
+                        }
+                    },
+                    IsDutiable ="Y",
+                    NetworkTypeCode = "AL",
+                    QtdShp = new QtdShp()
+                    {
+                        LocalProductCode = "S",
+                        QtdShpExChrg_SpecialServiceType = "I",
+                        QtdShpExChrg_LocalSpecialServiceType = "II"
+                    },
+                    InsuredValue = "400.000",
+                    InsuredCurrency = "EUR",
+                },
+                Destination = new CountryPostalCode()
+                {
+                    CountryCode = "US",
+                    Postalcode = "86001"
+                },
+                Dutiable = new Dutiable()
+                {
+                    DeclaredCurrency = "EUR",
+                    DeclaredValue = "9.0"
+                }
+            };
+
+            // Setup RequestTracking object 
+            RequestBase requestTracking = new RequestTracking()
+            {
+                LanguageCode = "en",
+                LPNumber = "JD0144549751510007712",               
+                LevelOfDetails = "ALL_CHECK_POINTS",
+                PiecesEnabled = "B"
+            };
+
+            DHLApi.SetupRequest(filePath, requestTracking, REQUESTS.TRACKING);
 
             DHLApi.XmlRequest(url, filePath);
-            DHLResponse resp = DHLApi.XmlResponse(DHLApi.ResponseXmlString, REQUESTS.CAPABILITY);
+            DHLResponse resp = DHLApi.XmlResponse(DHLApi.ResponseXmlString, REQUESTS.TRACKING);
             if (resp.RequestType == REQUESTS.TRACKING)
             {
                 OutputTrackingResponse(resp.Trackings);

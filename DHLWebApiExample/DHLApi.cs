@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading;
@@ -20,24 +21,22 @@ namespace DHLWebApiExample
         TRACKING
     }
 
-    
+
 
     public class DHLApi
     {
         private static ManualResetEvent allDone = new ManualResetEvent(false);
-        private static byte[] requestBytes;
-        private static string responseString;
-
+        private static byte[] RequestBytes { get; set; }
         public static string ResponseXmlString { get; set; }
 
         public static void XmlRequest(string url, string filePath)
         {
             string xmlText = File.ReadAllText(filePath);
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
-            requestBytes = Encoding.GetEncoding("UTF-8").GetBytes(xmlText);
+            RequestBytes = Encoding.GetEncoding("UTF-8").GetBytes(xmlText);
             request.ContentType = "application/x-www-form-urlencoded";
             request.Method = "POST";
-            request.ContentLength = requestBytes.Length;
+            request.ContentLength = RequestBytes.Length;
             //request.Date = DateTime.Now;
             //request.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials;
 
@@ -57,7 +56,7 @@ namespace DHLWebApiExample
             Stream postStream = request.EndGetRequestStream(asynchronousResult);
 
             // Write to the request stream.
-            postStream.Write(requestBytes, 0, requestBytes.Length);
+            postStream.Write(RequestBytes, 0, RequestBytes.Length);
             postStream.Close();
 
             // Start the asynchronous operation to get the response
@@ -73,9 +72,9 @@ namespace DHLWebApiExample
 
             Stream streamResponse = response.GetResponseStream();
             StreamReader streamRead = new StreamReader(streamResponse);
-            ResponseXmlString = streamRead.ReadToEnd();          
+            ResponseXmlString = streamRead.ReadToEnd();
 
-            
+
 
             //Close the stream object
             streamResponse.Close();
@@ -83,11 +82,11 @@ namespace DHLWebApiExample
 
             // Release the HttpWebResponse
             response.Close();
-            allDone.Set();            
+            allDone.Set();
         }
 
         public static DHLResponse XmlResponse(string respString, REQUESTS reqType)
-        { 
+        {
             DHLResponse resp = new DHLResponse();
             switch (reqType)
             {
@@ -117,6 +116,154 @@ namespace DHLWebApiExample
             return resp;
         }
 
+        public static void SetupRequest(string filePath, RequestBase model, REQUESTS requestType)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(filePath);
+
+            // Set ServiceHeader
+            XmlNode messageTime = doc.SelectSingleNode("//MessageTime");
+            XmlNode messageReference = doc.SelectSingleNode("//MessageReference");
+            XmlNode siteID = doc.SelectSingleNode("//SiteID");
+            XmlNode pwd = doc.SelectSingleNode("//Password");
+
+            // Set values to elements in ServiceHeader pull out from above
+
+            messageTime.InnerText = DateTime.Now.ToString("o");
+            messageReference.InnerText = ConfigurationManager.AppSettings["MessageReference"];
+            siteID.InnerText = ConfigurationManager.AppSettings["DHL_SiteID"];
+            pwd.InnerText = ConfigurationManager.AppSettings["DHL_Password"];
+
+            if (requestType == REQUESTS.CAPABILITY)
+            {
+                SetupQuoteRequest(filePath, ref doc, (RequestQuote)model, REQUESTS.CAPABILITY);
+            }
+            else if (requestType == REQUESTS.TRACKING)
+            {
+                SetupTrackingRequest(filePath, ref doc, (RequestTracking)model, REQUESTS.TRACKING);
+            }
+        }
+
+        private static void SetupQuoteRequest(string filePath, ref XmlDocument doc, RequestQuote model, REQUESTS requestType)
+        {         
+
+            XmlNode FromCountryCode = doc.SelectSingleNode("//From//CountryCode");
+            XmlNode FromPostalcode = doc.SelectSingleNode("//From//Postalcode");
+            XmlNode paymentCountryCode = doc.SelectSingleNode("//BkgDetails//PaymentCountryCode");
+            XmlNode date = doc.SelectSingleNode("//BkgDetails//Date");
+            XmlNode readyTime = doc.SelectSingleNode("//BkgDetails//ReadyTime");
+            XmlNode readyTimeGMTOffset = doc.SelectSingleNode("//BkgDetails//ReadyTimeGMTOffset");
+            XmlNode dimensionUnit = doc.SelectSingleNode("//BkgDetails//DimensionUnit");
+            XmlNode weightUnit = doc.SelectSingleNode("//BkgDetails//WeightUnit");
+
+            XmlNode pieceID = doc.SelectSingleNode("//Pieces//Piece//PieceID");
+            XmlNode height = doc.SelectSingleNode("//Pieces//Piece//Height");
+            XmlNode depth = doc.SelectSingleNode("//Pieces//Piece//Depth");
+            XmlNode width = doc.SelectSingleNode("//Pieces//Piece//Width");
+            XmlNode weight = doc.SelectSingleNode("//Pieces//Piece//Weight");
+
+            XmlNode isDutiable = doc.SelectSingleNode("//BkgDetails//IsDutiable");
+            XmlNode networkTypeCode = doc.SelectSingleNode("//BkgDetails//NetworkTypeCode");
+            
+            XmlNode insuredValue = doc.SelectSingleNode("//BkgDetails//InsuredValue");
+            XmlNode insuredCurrency = doc.SelectSingleNode("//BkgDetails//InsuredCurrency");
+            XmlNode declaredCurrency = doc.SelectSingleNode("//Dutiable//DeclaredCurrency");
+            XmlNode declaredValue = doc.SelectSingleNode("//Dutiable//DeclaredValue");
+            XmlNode ToCountryCode = doc.SelectSingleNode("//To//CountryCode");
+            XmlNode ToPostalcode = doc.SelectSingleNode("//To//Postalcode");
+
+            // Set values to elements pull out from above
+            FromCountryCode.InnerText = model.Origin.CountryCode;
+            FromPostalcode.InnerText = model.Origin.Postalcode;
+            paymentCountryCode.InnerText = model.BkgDetails.PaymentCountryCode;
+            date.InnerText = model.BkgDetails.Date;
+            readyTime.InnerText = model.BkgDetails.ReadyTime;
+            readyTimeGMTOffset.InnerText = model.BkgDetails.ReadyTimeGMTOffset;
+            dimensionUnit.InnerText = model.BkgDetails.DimensionUnit;
+            weightUnit.InnerText = model.BkgDetails.WeightUnit;
+
+            
+
+            if (model.BkgDetails.Pieces.Count > 1)
+            {
+                XmlNode Pieces = doc.SelectSingleNode("//Pieces");
+                foreach (var piece in model.BkgDetails.Pieces.Skip(1))
+                {
+                    XmlNode Piece = doc.CreateNode(XmlNodeType.Element, "Piece", "");
+
+                    XmlNode PieceID = doc.CreateNode(XmlNodeType.Element, "PieceID", "");
+                    PieceID.InnerText = piece.PieceID.ToString();
+
+                    XmlNode Height = doc.CreateNode(XmlNodeType.Element, "Height", "");
+                    Height.InnerText = piece.Height.ToString();
+
+                    XmlNode Depth = doc.CreateNode(XmlNodeType.Element, "Depth", "");
+                    Depth.InnerText = piece.Depth.ToString();
+
+                    XmlNode Width = doc.CreateNode(XmlNodeType.Element, "Width", "");
+                    Width.InnerText = piece.Width.ToString();
+
+                    XmlNode Weight = doc.CreateNode(XmlNodeType.Element, "Weight", "");
+                    Weight.InnerText = piece.Weight.ToString();
+
+                    Piece.AppendChild(PieceID);
+                    Piece.AppendChild(Height);
+                    Piece.AppendChild(Depth);
+                    Piece.AppendChild(Width);
+                    Piece.AppendChild(Weight);
+
+                    Pieces.AppendChild(Piece);
+                }
+            }
+            isDutiable.InnerText = model.BkgDetails.IsDutiable;
+            networkTypeCode.InnerText = model.BkgDetails.NetworkTypeCode;
+
+            XmlNode localProductCode = doc.SelectSingleNode("//BkgDetails//QtdShp//LocalProductCode");
+            if (model.BkgDetails.QtdShp != null && localProductCode != null)
+            {                
+                XmlNode specialServiceType = doc.SelectSingleNode("//BkgDetails//QtdShp//QtdShpExChrg//SpecialServiceType");
+                XmlNode localSpecialServiceType = doc.SelectSingleNode("//BkgDetails//QtdShp//QtdShpExChrg//LocalSpecialServiceType");
+
+                localProductCode.InnerText = model.BkgDetails.QtdShp.LocalProductCode;
+                specialServiceType.InnerText = model.BkgDetails.QtdShp.QtdShpExChrg_SpecialServiceType;
+                localSpecialServiceType.InnerText = model.BkgDetails.QtdShp.QtdShpExChrg_LocalSpecialServiceType;
+            }
+            insuredValue.InnerText = model.BkgDetails.InsuredValue;
+            insuredCurrency.InnerText = model.BkgDetails.InsuredCurrency;
+
+            ToCountryCode.InnerText = model.Destination.CountryCode;
+            ToPostalcode.InnerText = model.Destination.Postalcode;
+            declaredCurrency.InnerText = model.Dutiable.DeclaredCurrency;
+            declaredValue.InnerText = model.Dutiable.DeclaredValue.ToString();
+
+            doc.Save(filePath);
+
+        }
+
+        private static void SetupTrackingRequest(string filePath, ref XmlDocument doc, RequestTracking model, REQUESTS requestType)
+        {
+
+            XmlNode languageCode = doc.SelectSingleNode("//LanguageCode");
+            languageCode.InnerText = model.LanguageCode;
+            XmlNode lPNumber = doc.SelectSingleNode("//LPNumber");
+            //if (model.LPNumbers.Count > 1)
+            //{
+            //    foreach (var LPNumber in model.LPNumbers.Skip(1))
+            //    {
+            //        doc.CreateNode(XmlNodeType.Element, "LPNumber", "");
+            //        XmlNode number = doc.SelectSingleNode("//LPNumber");
+            //        number.InnerText = LPNumber;
+            //        doc.AppendChild(number);
+            //    }
+            //}
+            XmlNode levelOfDetails = doc.SelectSingleNode("//LevelOfDetails");
+            levelOfDetails.InnerText = model.LevelOfDetails;
+            XmlNode piecesEnabled = doc.SelectSingleNode("//PiecesEnabled");
+            piecesEnabled.InnerText = model.PiecesEnabled;
+
+            doc.Save(filePath);
+        }
+
         public static void SetupCriteriaToRequestXml(string filePath)
         {
             // Create the XmlDocument.
@@ -124,12 +271,16 @@ namespace DHLWebApiExample
             doc.Load(filePath);
 
             XmlNode messageTime = doc.SelectSingleNode("//MessageTime");
+            XmlNode messageReference = doc.SelectSingleNode("//MessageReference");
             XmlNode siteID = doc.SelectSingleNode("//SiteID");
             XmlNode pwd = doc.SelectSingleNode("//Password");
+            XmlNode date = doc.SelectSingleNode("//Date");
 
             messageTime.InnerText = DateTime.Now.ToString("o");
+            messageReference.InnerText = "0987654321098765432109876543";
             siteID.InnerText = ConfigurationManager.AppSettings["DHL_SiteID"];
             pwd.InnerText = ConfigurationManager.AppSettings["DHL_Password"];
+            date.InnerText = DateTime.Now.ToString("yyyy-MM-dd");
 
             doc.Save(filePath);
 
@@ -191,19 +342,6 @@ namespace DHLWebApiExample
             Console.WriteLine("CountryCode = {0}", CountryCode.InnerText);
             XmlNode CountryName = doc.SelectSingleNode("//Shipper//CountryName");
             Console.WriteLine("CountryName = {0}", CountryName.InnerText);
-        }
-
-        public void ParseXmlTracking2(string filePath)
-        {
-            string xmlText = File.ReadAllText(filePath);
-            XmlTextReader reader = new XmlTextReader(new StringReader(xmlText));
-            while (reader.Read())
-            {
-                if (reader.NodeType == XmlNodeType.Text)
-                {
-                    Console.WriteLine("{0}", reader.Value.Trim());
-                }
-            }
         }
 
         public static List<ResponseAWBInfo> ParseXmlTracking(string respString)
@@ -319,7 +457,7 @@ namespace DHLWebApiExample
                 }
                 XmlNode pieceDetails = awbInfo.SelectSingleNode("Pieces//PieceInfo//PieceDetails");
 
-                AWBInfo.PieceDetails = new ReponsePieceDetails
+                AWBInfo.PieceDetails = new ResponsePieceDetails
                 {
                     AWBNumber = pieceDetails.SelectSingleNode("AWBNumber").InnerText,
                     LicensePlate = pieceDetails.SelectSingleNode("LicensePlate").InnerText,
@@ -341,6 +479,6 @@ namespace DHLWebApiExample
         }
 
 
-  
+
     }
 }

@@ -8,6 +8,6 @@ namespace DHLWebApiExample.ViewModels
 {
     public class ResponsePieceInfo
     {
-        public List<ReponsePieceDetails> PieceDetails { get; set; }
+        public List<ResponsePieceDetails> PieceDetails { get; set; }
     }
 }

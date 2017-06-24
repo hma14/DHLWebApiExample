@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DHLWebApiExample.ViewModels
 {
-    public class Dutiable
+    public class RequestBase
     {
-        public string DeclaredCurrency { get; set; }
-        public string DeclaredValue { get; set; }       
+        public ServiceHeader ServiceHeader { get; set; }
     }
 }

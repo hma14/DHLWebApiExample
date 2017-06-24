@@ -16,11 +16,14 @@ namespace DHLWebApiExample.ViewModels
         public string DimensionUnit { get; set; }
         public string WeightUnit { get; set; }
         public float ShipmentWeight { get; set; }
-        public int Volume { get; set; }
 
         public List<Piece> Pieces { get; set; }
-        public string PaymentAccountNumber { get; set; }
         public string IsDutiable { get; set; }
+        public QtdShp QtdShp { get; set; }
+        public string NetworkTypeCode { get; set; }
+        public string InsuredValue { get; set; }
+        public string InsuredCurrency { get; set; }
+        public string PaymentAccountNumber { get; set; }
 
     }
 }
