@@ -107,10 +107,25 @@
     <Content Include="DHLShippingXml\Valid13_Quote_IMPPricebyReceiver_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid14_Quote_IMPPriceby3rdParty_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="DHLShippingXml\Valid15_Quote_VolWeightHigher_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DHLShippingXml\Valid16_Quote_NonEUNonEU_WithAcctProdService_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DHLShippingXml\Valid17_Quote_EU_NonEU_WithAcctProdInsurance_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DHLShippingXml\Valid18_Quote_BRtoUS_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DHLShippingXml\Valid19_Quote_PEtoEG_Suburb_Request.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DHLShippingXml\Valid20_Quote_BRtoBR_TaxBreakdownPricing_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DHLShippingXml\Valid3_Capability_EU_NonEU_Dutiable_Response.xml">

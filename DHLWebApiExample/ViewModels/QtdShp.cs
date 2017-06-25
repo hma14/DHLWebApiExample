@@ -8,7 +8,9 @@ namespace DHLWebApiExample.ViewModels
 {
     public class QtdShp
     {
+        public string GlobalProductCode { get; set; }
         public string LocalProductCode { get; set; }
+
         public string QtdShpExChrg_SpecialServiceType { get; set; }
         public string QtdShpExChrg_LocalSpecialServiceType { get; set; }
 

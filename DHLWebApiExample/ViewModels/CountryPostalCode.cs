@@ -10,5 +10,6 @@ namespace DHLWebApiExample.ViewModels
     {
         public string CountryCode { get; set; }
         public string Postalcode { get; set; }
+        public string City { get; set; }
     }
 }

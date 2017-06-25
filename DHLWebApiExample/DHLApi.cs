@@ -148,7 +148,19 @@ namespace DHLWebApiExample
         {         
 
             XmlNode FromCountryCode = doc.SelectSingleNode("//From//CountryCode");
+            FromCountryCode.InnerText = model.Origin.CountryCode;
+            
             XmlNode FromPostalcode = doc.SelectSingleNode("//From//Postalcode");
+            if (FromPostalcode != null)
+            {
+                FromPostalcode.InnerText = model.Origin.Postalcode;
+            }
+            XmlNode FromCity = doc.SelectSingleNode("//From//City");
+            if (FromCity != null)
+            {
+                FromCity.InnerText = model.Origin.City;
+            }
+
             XmlNode paymentCountryCode = doc.SelectSingleNode("//BkgDetails//PaymentCountryCode");
             XmlNode date = doc.SelectSingleNode("//BkgDetails//Date");
             XmlNode readyTime = doc.SelectSingleNode("//BkgDetails//ReadyTime");
@@ -165,16 +177,28 @@ namespace DHLWebApiExample
             XmlNode isDutiable = doc.SelectSingleNode("//BkgDetails//IsDutiable");
             XmlNode networkTypeCode = doc.SelectSingleNode("//BkgDetails//NetworkTypeCode");
             
-            XmlNode insuredValue = doc.SelectSingleNode("//BkgDetails//InsuredValue");
-            XmlNode insuredCurrency = doc.SelectSingleNode("//BkgDetails//InsuredCurrency");
+            
             XmlNode declaredCurrency = doc.SelectSingleNode("//Dutiable//DeclaredCurrency");
             XmlNode declaredValue = doc.SelectSingleNode("//Dutiable//DeclaredValue");
+
             XmlNode ToCountryCode = doc.SelectSingleNode("//To//CountryCode");
+            ToCountryCode.InnerText = model.Destination.CountryCode;
+
             XmlNode ToPostalcode = doc.SelectSingleNode("//To//Postalcode");
+            XmlNode ToCity = doc.SelectSingleNode("//To//City");
+            if (ToPostalcode != null)
+            {
+                ToPostalcode.InnerText = model.Destination.Postalcode;
+            }
+            if (ToCity != null)
+            {
+                ToCity.InnerText = model.Destination.City;
+            }
+
 
             // Set values to elements pull out from above
-            FromCountryCode.InnerText = model.Origin.CountryCode;
-            FromPostalcode.InnerText = model.Origin.Postalcode;
+
+
             paymentCountryCode.InnerText = model.BkgDetails.PaymentCountryCode;
             date.InnerText = model.BkgDetails.Date;
             readyTime.InnerText = model.BkgDetails.ReadyTime;
@@ -218,21 +242,32 @@ namespace DHLWebApiExample
             isDutiable.InnerText = model.BkgDetails.IsDutiable;
             networkTypeCode.InnerText = model.BkgDetails.NetworkTypeCode;
 
-            XmlNode localProductCode = doc.SelectSingleNode("//BkgDetails//QtdShp//LocalProductCode");
+            XmlNode globalProductCode = doc.SelectSingleNode("//BkgDetails//QtdShp//GlobalProductCode");
+            if (model.BkgDetails.QtdShp != null && globalProductCode != null && model.BkgDetails.QtdShp.GlobalProductCode != null)
+            {
+                globalProductCode.InnerText = model.BkgDetails.QtdShp.GlobalProductCode;
+            }
+                XmlNode localProductCode = doc.SelectSingleNode("//BkgDetails//QtdShp//LocalProductCode");
             if (model.BkgDetails.QtdShp != null && localProductCode != null)
             {                
                 XmlNode specialServiceType = doc.SelectSingleNode("//BkgDetails//QtdShp//QtdShpExChrg//SpecialServiceType");
-                XmlNode localSpecialServiceType = doc.SelectSingleNode("//BkgDetails//QtdShp//QtdShpExChrg//LocalSpecialServiceType");
-
-                localProductCode.InnerText = model.BkgDetails.QtdShp.LocalProductCode;
-                specialServiceType.InnerText = model.BkgDetails.QtdShp.QtdShpExChrg_SpecialServiceType;
-                localSpecialServiceType.InnerText = model.BkgDetails.QtdShp.QtdShpExChrg_LocalSpecialServiceType;
+                if (specialServiceType != null)
+                {
+                    XmlNode localSpecialServiceType = doc.SelectSingleNode("//BkgDetails//QtdShp//QtdShpExChrg//LocalSpecialServiceType");
+                    specialServiceType.InnerText = model.BkgDetails.QtdShp.QtdShpExChrg_SpecialServiceType;
+                    localSpecialServiceType.InnerText = model.BkgDetails.QtdShp.QtdShpExChrg_LocalSpecialServiceType;
+                }
+                
+                localProductCode.InnerText = model.BkgDetails.QtdShp.LocalProductCode;               
             }
-            insuredValue.InnerText = model.BkgDetails.InsuredValue;
-            insuredCurrency.InnerText = model.BkgDetails.InsuredCurrency;
-
-            ToCountryCode.InnerText = model.Destination.CountryCode;
-            ToPostalcode.InnerText = model.Destination.Postalcode;
+            XmlNode insuredValue = doc.SelectSingleNode("//BkgDetails//InsuredValue");
+            XmlNode insuredCurrency = doc.SelectSingleNode("//BkgDetails//InsuredCurrency");
+            if (insuredValue != null)
+            {
+                insuredValue.InnerText = model.BkgDetails.InsuredValue;
+                insuredCurrency.InnerText = model.BkgDetails.InsuredCurrency;
+            }
+          
             declaredCurrency.InnerText = model.Dutiable.DeclaredCurrency;
             declaredValue.InnerText = model.Dutiable.DeclaredValue.ToString();
 
