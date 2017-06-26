@@ -240,7 +240,11 @@ namespace DHLWebApiExample
                 }
             }
             isDutiable.InnerText = model.BkgDetails.IsDutiable;
-            networkTypeCode.InnerText = model.BkgDetails.NetworkTypeCode;
+            
+            if (networkTypeCode != null)
+            {
+                networkTypeCode.InnerText = model.BkgDetails.NetworkTypeCode;
+            }
 
             XmlNode globalProductCode = doc.SelectSingleNode("//BkgDetails//QtdShp//GlobalProductCode");
             if (model.BkgDetails.QtdShp != null && globalProductCode != null && model.BkgDetails.QtdShp.GlobalProductCode != null)
