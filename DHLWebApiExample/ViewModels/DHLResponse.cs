@@ -10,6 +10,7 @@ namespace DHLWebApiExample.ViewModels
     {
         public REQUESTS RequestType { get; set; }
         public List<ResponseAWBInfo> Trackings { get; set; }
-         
+        public ResponseQuote Quote { get; set; }
+
     }
 }

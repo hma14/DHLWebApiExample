@@ -28,18 +28,18 @@
           <Width>10</Width>
           <Weight>1.0</Weight>
         </Piece>
-      </Pieces> 
-	 <PaymentAccountNumber>966246658</PaymentAccountNumber>
+      </Pieces>
+      <PaymentAccountNumber>966246658</PaymentAccountNumber>
       <IsDutiable>N</IsDutiable>
-      <NetworkTypeCode>AL</NetworkTypeCode>	
-	  <InsuredValue>555.000</InsuredValue>
+      <NetworkTypeCode>AL</NetworkTypeCode>
+      <InsuredValue>555.000</InsuredValue>
       <InsuredCurrency>JPY</InsuredCurrency>
     </BkgDetails>
     <To>
       <CountryCode>JP</CountryCode>
       <Postalcode>1000000</Postalcode>
     </To>
-   <Dutiable>
+    <Dutiable>
       <DeclaredCurrency>EUR</DeclaredCurrency>
       <DeclaredValue>234.0</DeclaredValue>
     </Dutiable>

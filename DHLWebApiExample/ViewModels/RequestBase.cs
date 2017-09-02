@@ -9,5 +9,6 @@ namespace DHLWebApiExample.ViewModels
     public class RequestBase
     {
         public ServiceHeader ServiceHeader { get; set; }
+        public REQUESTS RequestType { get; set; }
     }
 }

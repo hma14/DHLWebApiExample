@@ -50,11 +50,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Address.cs" />
     <Compile Include="ViewModels\BkgDetails.cs" />
+    <Compile Include="ViewModels\BkgDetailsResp.cs" />
+    <Compile Include="ViewModels\ChargeTaxAmountDet.cs" />
     <Compile Include="ViewModels\CountryPostalCode.cs" />
     <Compile Include="ViewModels\DHLResponse.cs" />
     <Compile Include="ViewModels\Dutiable.cs" />
+    <Compile Include="ViewModels\MrkSrv.cs" />
     <Compile Include="ViewModels\Piece.cs" />
+    <Compile Include="ViewModels\QtdSExtrChrgInAdCur.cs" />
     <Compile Include="ViewModels\QtdShp.cs" />
+    <Compile Include="ViewModels\QtdShpExChrg.cs" />
+    <Compile Include="ViewModels\QtdShpResp.cs" />
+    <Compile Include="ViewModels\QtdSInAdCur.cs" />
     <Compile Include="ViewModels\RequestBase.cs" />
     <Compile Include="ViewModels\RequestQuote.cs" />
     <Compile Include="ViewModels\ResponsePieceDetails.cs" />
@@ -62,11 +69,15 @@
     <Compile Include="ViewModels\ResponseConsignee.cs" />
     <Compile Include="ViewModels\ResponsePieceInfo.cs" />
     <Compile Include="ViewModels\ResponsePieces.cs" />
+    <Compile Include="ViewModels\ResponseQuote.cs" />
     <Compile Include="ViewModels\ResponseShipmentEvent.cs" />
     <Compile Include="ViewModels\ResponseShipmentInfo.cs" />
     <Compile Include="ViewModels\ResponseShipper.cs" />
+    <Compile Include="ViewModels\Service.cs" />
+    <Compile Include="ViewModels\ServiceArea.cs" />
     <Compile Include="ViewModels\ServiceHeader.cs" />
     <Compile Include="ViewModels\RequestTracking.cs" />
+    <Compile Include="ViewModels\WeightChargeTaxDet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -92,48 +103,73 @@
     <Content Include="DHLShippingXml\TrackingRequest_MultipleLP_PieceEnabled_B_1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\TrackingRequest_SingleAWB_10D.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="DHLShippingXml\TrackingResponse_MultipleLP_PieceEnabled_B_1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
+    <Content Include="DHLShippingXml\Valid10_Quote_AP_PriceBreakdownRAS.xml" />
     <Content Include="DHLShippingXml\Valid10_Quote_AP_PriceBreakdownRAS_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid11_Quote_EU_PriceBreakdownRAS.xml" />
     <Content Include="DHLShippingXml\Valid11_Quote_EU_PriceBreakdownRAS_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid12_Quote_IMPPricebyShipper.xml" />
     <Content Include="DHLShippingXml\Valid12_Quote_IMPPricebyShipper_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid13_Quote_IMPPricebyReceiver.xml" />
     <Content Include="DHLShippingXml\Valid13_Quote_IMPPricebyReceiver_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid14_Quote_IMPPriceby3rdParty.xml" />
     <Content Include="DHLShippingXml\Valid14_Quote_IMPPriceby3rdParty_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid15_Quote_VolWeightHigher.xml" />
     <Content Include="DHLShippingXml\Valid15_Quote_VolWeightHigher_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid16_Quote_NonEUNonEU_WithAcctProdService.xml" />
     <Content Include="DHLShippingXml\Valid16_Quote_NonEUNonEU_WithAcctProdService_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid17_Quote_EU_NonEU_WithAcctProdInsurance.xml" />
     <Content Include="DHLShippingXml\Valid17_Quote_EU_NonEU_WithAcctProdInsurance_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid18_Quote_BRtoUS.xml" />
     <Content Include="DHLShippingXml\Valid18_Quote_BRtoUS_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid19_Quote_PEtoEG_Suburb.xml" />
     <Content Include="DHLShippingXml\Valid19_Quote_PEtoEG_Suburb_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid1_Capbility_EUEU_MultipleBkgs_NonDutiable.xml" />
+    <Content Include="DHLShippingXml\Valid20_Quote_BRtoBR_TaxBreakdownPricing.xml" />
     <Content Include="DHLShippingXml\Valid20_Quote_BRtoBR_TaxBreakdownPricing_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid2_Capability_EUEU_DutiableProd.xml" />
+    <Content Include="DHLShippingXml\Valid3_Capability_EU_NonEU_Dutiable.xml" />
     <Content Include="DHLShippingXml\Valid3_Capability_EU_NonEU_Dutiable_Response.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DHLShippingXml\Valid3_Capability_EU_NonEU_Dutiable_Request.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DHLShippingXml\Valid4_Capability_NonEU_EU_Dutiable.xml" />
+    <Content Include="DHLShippingXml\Valid5_Capability_NonEU_NonEU_DiffCountry_Dutiable.xml" />
+    <Content Include="DHLShippingXml\Valid6_Capability_BRUS.xml" />
+    <Content Include="DHLShippingXml\Valid7_Capability_AllServicesIndRes.xml" />
+    <Content Include="DHLShippingXml\Valid8_Capability_PUDeliveryAddsDays.xml" />
+    <Content Include="DHLShippingXml\Valid9_Capability_NonEU_NonEU_WithAcctProdService.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
